@@ -1,15 +1,472 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
-    <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
-    <link rel="preload" href="../style/style.css" as="style">
-    <link rel="stylesheet" href="../style/style.css" data-n-g="">
-</head>
-<body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
     
+        <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
+    
+        <link rel="preload" href="../style/style.css" as="style">
+        <link rel="stylesheet" href="../style/style.css" >
+    
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;display=swap" rel="stylesheet">
+        <style>
+          #nav{width: 98.9vw;}
+        </style>
+    
+    </head>
+<body>
+
+<!-- Header Part -->
+
+<nav id="nav" >
+    <div id="logo">
+      <img src="https://www.cricket.com/static/cricket.com.svg" />
+    </div>
+
+  
+    <div id="cont">
+
+       <div class="link">
+      <a href=''>
+      <div class="navdiv">
+         
+        <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+        <p>Fantasy Research</p>
+     
+      </div>
+  </a>
+  </div>  
+  
+  
+  
+
+   
+  <div class="link">
+      <a href=''>
+          <div class="navdiv">
+            <img
+              src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+            />
+            <p>Criclytics</p>
+          </div>
+      </a>
+  </div> 
+       
+     
+  <div class="link">
+      <a href=''>
+      <div class="navdiv">
+        <img
+          src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+        />
+        <p>Schedule</p>
+      </div>
+  </a>
+</div> 
+
+<div class="link">
+  <a href=''>
+      <div class="navdiv">
+        <img
+          src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+        />
+        <p>Series</p>
+      </div>
+  </a>
+</div> 
+
+<div class="link">
+  <a href=''>
+      <div class="navdiv">
+        <img
+          src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
+        />
+        <p>News</p>
+      </div>
+  </a>
+</div> 
+
+
+<div class="link">
+  <a href=''>
+      <div class="navdiv">
+        <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+        <p>Videos</p>
+      </div>
+  </a>
+</div>
+
+
+<div class="link">
+  <a href=''>
+      <div class="navdiv">
+        <img
+          src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+        />
+        <p>Players</p>
+      </div>
+  </a>
+</div>
+
+
+<div class="link">
+  <a href=''>
+      <div class="navdiv">
+        <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+        <p>Teams</p>
+      </div>
+  </a>
+</div>
+
+
+
+      <div class="navdiv" onclick="login()">
+        <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+        <p>Profile</p>
+      </div>
+    </div>
+ 
+  </nav>
+
+
+<!-- End Header part -->
+
+   
+<!----Featured Video Part Starts ---->
+<div class="mainDiv">
+
+    <div class="midBodyMainDiv">
+        <div class="midBodyHeaderDiv">
+            <div class="headLineDiv">
+                <h2>FEATURED VIDEOS</h2>
+                <a href="/news/latest">
+                    <img alt="../images/svgs/RightSchevronBlack.svg" src="../images/svgs/RightSchevronBlack.svg">
+                </a>
+            </div>
+
+            <!-- <div class="dividingLine"></div> -->
+            <hr />
+
+            <!-- Started from Here -->
+
+
+
+    <div class="outerContainer">
+        <div class="fVideosContainer">
+            
+            <a class="fVideosScreenLink"
+                href="../videos/rohit-sharma-i-wtc-diaries-i-episode-1-i-cricketcom.html">
+
+                <div
+                    class="fVideosScreenImageDiv">
+                        <span class="fVideosScreenImageSpan">
+
+                                <img src="https://img.youtube.com/vi/r-95j4ErH_Q/mqdefault.jpg"/>
+                        </span>
+                        
+                       
+                </div>
+                        <span class="fvideosScreenHeading">Rohit Sharma I WTC Diaries I Episode 1 I Cricket.com
+                    </span>
+            </a>
+
+
+
+            <a class="fVideosScreenLink"
+            href="../videos/indias-road-to-the-world-test-championship-wtc-final-i-cricketcom.html">
+
+            <div
+                class="fVideosScreenImageDiv">
+                    <span class="fVideosScreenImageSpan">
+
+                            <img  src="https://img.youtube.com/vi/u-qGGFFivK4/mqdefault.jpg"/>
+                    </span>
+                    
+                   
+            </div>
+                    <span class="fvideosScreenHeading">India’s road to the World Test Championship (WTC) final I
+                        Cricket.com
+                </span>
+        </a>
+
+        
+       
+            <a class="fVideosScreenLink"
+            href="../videos/new-zealands-road-to-the-world-test-championship-wtc-final-i-cricketcom.html">
+
+            <div
+                class="fVideosScreenImageDiv">
+                    <span class="fVideosScreenImageSpan">
+
+                            <img  src="https://img.youtube.com/vi/ASBThmYL_ck/mqdefault.jpg"/>
+                    </span>
+                    
+                   
+            </div>
+                    <span class="fvideosScreenHeading">New Zealand’s road to the World Test Championship (WTC) final I
+                        Cricket.com
+                </span>
+        </a>
+
+        
+        <a class="fVideosScreenLink"
+        href="../videos/india-should-play-ashwin-and-jadeja-in-wtc-final-i-msk-prasad-interview-i-cricketco.html">
+
+        <div
+            class="fVideosScreenImageDiv">
+                <span class="fVideosScreenImageSpan">
+
+                        <img  src="https://img.youtube.com/vi/1H0gkkFn7jg/mqdefault.jpg"/>
+                </span>
+                
+               
+        </div>
+                <span class="fvideosScreenHeading">'India should play Ashwin &amp; Jadeja in WTC Final' I MSK Prasad
+                    Interview I Cricket.com
+            </span>
+    </a>
+
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<!----END Featured Video Part ----->
+
+    <!-- News And Articles -->
+    <div class="mainDiv">
+
+        <div class="midBodyMainDiv">
+            <div class="midBodyHeaderDiv">
+                <div class="headLineDiv">
+                    <h2>NEWS AND ARTICLES</h2>
+                    <a href="/news/latest">
+                        <img alt="../images/svgs/RightSchevronBlack.svg" src="../images/svgs/RightSchevronBlack.svg">
+                    </a>
+                </div>
+    
+                <!-- <div class="dividingLine"></div> -->
+                <hr />
+    
+                <!-- Started from Here -->
+    
+                <!-- Starting new div to display Article image and texts -->
+    
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
+                <div class="articalImageDiv">
+                    <img src="../images/png/1.png"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Dhawan to lead India in Sri Lanka, Bhuvneshwar Kumar to be his deputy </h2>
+                    <div class="subHeadlineDiv">Sakariya earns a maiden call-up while Iyer, Natarajan continue
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">10 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
+                <div class="articalImageDiv">
+                    <img src="../images/png/1.png"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Dhawan to lead India in Sri Lanka, Bhuvneshwar Kumar to be his deputy </h2>
+                    <div class="subHeadlineDiv">Sakariya earns a maiden call-up while Iyer, Natarajan continue
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">10 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    <div class="articalContainer">
+        <div> <a
+                href="../news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
+                <div class="articalImageDiv">
+                    <img src="../images/png/1.png"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Dhawan to lead India in Sri Lanka, Bhuvneshwar Kumar to be his deputy </h2>
+                    <div class="subHeadlineDiv">Sakariya earns a maiden call-up while Iyer, Natarajan continue
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">10 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    <div class="articalContainer">
+        <div> <a
+                href="../news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
+                <div class="articalImageDiv">
+                    <img src="../images/png/1.png"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Dhawan to lead India in Sri Lanka, Bhuvneshwar Kumar to be his deputy </h2>
+                    <div class="subHeadlineDiv">Sakariya earns a maiden call-up while Iyer, Natarajan continue
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">10 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
+                <div class="articalImageDiv">
+                    <img src="../images/png/1.png"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Dhawan to lead India in Sri Lanka, Bhuvneshwar Kumar to be his deputy </h2>
+                    <div class="subHeadlineDiv">Sakariya earns a maiden call-up while Iyer, Natarajan continue
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">10 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <!-- <hr/> -->
+    
+    
+    
+                <!-- </div> -->
+    
+            </div>
+        </div>
+        </
+        <!-- End News And Articles -->
+
+<!-- Poll Part -->
+<div class="midBodyMainDiv">
+    <div class="pollContainerDiv">
+        <div class="pollHeadingPart">
+            <h2>FAN POLL</h2>
+            <div class="pollVote">695 votes</div>
+        </div>
+        <hr/>
+        <div class="pollBottomPart" >
+           
+            <div class="pollBottonTextPart" style="width: 100%;"> Of the following Kiwi pacers, who will pose the biggest
+                threat to India in the WTC final?
+          
+            </div>
+ <div style="width: 50%;">
+                <div class="pollPart">
+                
+                    <div class="pollPartContainer">
+                        <div class="pollDiv">
+                            <div class="pollName"> Trent Boult
+                            </div>   
+                            <div class="pollPercentage">58
+                            </div>
+
+                            <div class="pollEnd1"></div>
+
+
+                        </div>
+                     </div>
+                     </div>
+
+                <div class="pollPart ">
+                
+                    <div class="pollPartContainer">
+                        <div class="pollDiv">
+                            <div class="pollName"> Tim Southee</div>
+                            <div class="pollPercentage">22</div>
+                            <div class="pollEnd2"></div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+<div style="width: 50%;">
+                <div class="pollPart ">
+                
+                    <div class="pollPartContainer">
+                        <div class="pollDiv">
+                            <div class="pollName"> Neil Wagner</div>
+                            <div class="pollPercentage">13</div>
+                            <div class="pollEnd3"></div>
+                        </div>
+                    </div>
+                    </div>
+                
+                <div class="pollPart ">
+                
+                    <div class="pollPartContainer">
+                        <div class="pollDiv">
+                            <div class="pollName"> Kyle Jamieson</div>
+                            <div class="pollPercentage">7</div>
+                            <div class="pollEnd4"></div>
+                        </div>
+                    </div>
+             </div>   </div>
+            
+            
+            </div>
+            </div>
+            </div>
+
+            <!-- End Poll Part -->
+
+</div>
+
+<!-- Footer Part -->
+<footer id="footer">
+    <div id="div_1">
+     <img src="https://www.cricket.com/static/svgs/cricket-logo.svg">
+      <p>Cricket like never before</p>
+      </div>
+
+    <div id="div_2">
+        <a href="https:"#">Term of use</a>
+        <a href="https:"#">Privacy Policy</a>
+        <a href="https:"#">Cookies Policy</a>
+    </div>
+    <div id="div_3">
+        <h5>follow us on</h5>
+        <p>@2020 Cricket.com | All right reserved</p>
+    </div>
+
+  </footer>
+
+
+<!-- End Footer Part -->
+
+
 </body>
 </html>
