@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice web</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Montserrat", sans-serif;
+      }
+      #nav {
+        display: flex;
+        align-items: center;
+        background-color: rgba(23, 33, 50, 255);
+        height: 80px;
+        position:sticky;
+        top: 0;
+       
+  }
+
+      #cont {
+        display: flex;
+        width: 650px;
+        margin-left: 80px;
+        height: 100%;
+      }
+      #cont {
+        text-align: center;
+        width: 90%;
+        margin-left: 15vw;
+      }
+      #cont > div:nth-child(1) {
+        width: 120px;
+      }
+
+      #logo {
+        margin-left: 170px;
+      }
+      .navdiv {
+        padding: 20px 14px;
+      }
+
+      .navdiv p {
+        font-size: 15px;
+        color: white;
+        font-size: 10px;
+        
+        }
+        .navdiv:hover{
+            background-color:rgb(105, 117, 143);
+        }
+        #slideshow {
+        background-color: rgba(168, 43, 46, 255);
+        height: 260px;
+        display:flex;
+      }
+
+      #maroon{
+        width: 100%;
+        background-color:rgba(172,44,47,255);
+        display:flex;
+        justify-content: center;
+        height:250px;
+        position: relative;
+        /* z-index:-1; */
+        
+       
+      }
+      #matches{
+        width:420px;
+        margin:25px 5px 25px 5px;
+       
+        border-radius: 5px;
+        position: relative;
+        z-index:1;
+       
+       }
+       #btn_prev,#btn_next{
+         width: 40px;
+         height: 40px;
+         margin: 100px 15px;
+         
+       }
+       #table{
+         display:flex;
+         justify-content:center;
+       }
+       #table_image{
+         width:75%;
+         margin-top: -10px;
+         position: relative;
+         z-index:1;
+          }
+          #left{
+            width: 420px;
+            margin:52px 5px 25px 5px;
+            border-radius: 5px;
+            height:140px;
+            position: relative;
+            right: -100px;
+          }
+          #right{
+            width: 420px;
+            margin:52px 5px 25px 5px;
+            border-radius: 5px;
+            height:140px;
+            position: relative;
+            left: -100px;
+          }
+
+         
+     
+     
+
+      
+      
+    </style>
+  </head>
+  <body>
+    <nav id="nav">
+     
+        <div id="logo">
+        <img src="https://www.cricket.com/static/cricket.com.svg" />
+      </div>
+    
+    
+      <div id="cont">
+
+
+
+         
+         <div class="link">
+        <a href=''>
+        <div class="navdiv">
+           
+          <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+          <p>Fantasy Research</p>
+       
+        </div>
+    </a>
+    </div>  
+    
+    
+    
+
+     
+    <div class="link">
+        <a href='criclyticspage.html'>
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+              />
+              <p>Criclytics</p>
+            </div>
+        </a>
+    </div> 
+         
+       
+    <div class="link">
+        <a href=''>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+          />
+          <p>Schedule</p>
+        </div>
+    </a>
+</div> 
+
+<div class="link">
+    <a href=''>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+          />
+          <p>Series</p>
+        </div>
+    </a>
+</div> 
+
+<div class="link">
+    <a href=''>
+        <div class="navdiv">
+          <img src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg">
+        
+          <p>News</p>
+        </div>
+    </a>
+</div> 
+
+
+<div class="link">
+    <a href=''>
+        <div class="navdiv">
+          <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+          <p>Videos</p>
+        </div>
+    </a>
+</div>
+
+
+<div class="link">
+    <a href=''>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+          />
+          <p>Players</p>
+        </div>
+    </a>
+</div>
+
+
+<div class="link">
+    <a href=''>
+        <div class="navdiv">
+          <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+          <p>Teams</p>
+        </div>
+    </a>
+</div>
+
+
+
+        <div class="navdiv" onclick="login()">
+          <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+          <p>Profile</p>
+        </div>
+      </div>
+      
+    
+        
+      </div>
+    </nav>
+<div id="maroon">
+ <img id="btn_prev" src='images/left-arrow.png' onclick="previous();previousrgt(); previouslft()">
+ <img id="left" src='images/image3.PNG'>
+   <img id="matches" src='images/image2.png'>
+   <img id='right' src="images/image1.PNG">
+  <img id="btn_next" src='images/right-arrow.png' onclick="next(); changergt(); changelft()">
+</div>
+<div id="table">
+  <img id="table_image" src="images/big1.PNG">
+</div>
+   
+  </body>
+
+
+</html>
+
+
+<script>
+  function login() {
+    window.location.href = "projectlogin.html";
+  }       
+
+  let i=1;
+  function next(){
+   const data=['images/big1.png','images/big2.png','images/big3.png','images/big4.png','images/big5.png',]
+   const arr = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+    if(i>4){
+  i=0;
+}
+    let image = document.getElementById("matches")
+    let poster = document.getElementById("table_image")
+image.setAttribute('src',arr[i]);
+poster.setAttribute("src",data[i]);
+
+i++;
+}
+  next();
+
+  let a =4
+  function changergt(){
+    const sum = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+  if(a>4){
+    a=0;
+  }
+  let slide = document.getElementById("right")
+  slide.setAttribute('src',sum[a])
+  a++;
+  }
+
+
+let b =3
+  function changelft(){
+    const lft = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+  if(b>4){
+    b=0;
+  }
+  let slide = document.getElementById("left")
+  slide.setAttribute('src',lft[b])
+  b++;
+  }
+
+  let c =0
+  function previousrgt(){
+    const prev = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+  if(c<0){
+    c=4;
+  }
+  let slide = document.getElementById("right")
+  slide.setAttribute('src',prev[c])
+  c--;
+  }
+  let d =2
+  function previouslft(){
+    const prev = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+  if(d<0){
+    d=4;
+  }
+  let slide = document.getElementById("left")
+  slide.setAttribute('src',prev[d])
+  d--;
+  }
+
+
+ 
+
+
+  
+
+
+
+ let k =1;
+  function previous(){
+
+    const sata=['images/big1.png','images/big2.png','images/big3.png','images/big4.png','images/big5.png',]
+    const array = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+if(k<0){
+  k=4
+}
+let image = document.getElementById("matches")
+    let poster = document.getElementById("table_image")
+image.setAttribute('src',array[k]);
+poster.setAttribute("src",sata[k]);
+
+k--;
+
+  }
+  previous();
+
+ 
+    
+</script>

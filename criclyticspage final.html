@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide show</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Montserrat", sans-serif;
+        }
+      #nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: rgba(23, 33, 50, 255);
+        height: 80px;
+        position:fixed;
+        top: 0; 
+        
+      }
+
+      #cont {
+        display: flex;
+        width: 650px;
+        margin-left: 80px;
+        height: 100%;
+      }
+      #cont {
+        text-align: center;
+        width: 90%;
+        margin-left: 15vw;
+      }
+      #outerdiv{
+        margin-top:80px;
+      }
+      #cont > div:nth-child(1) {
+        width: 120px;
+      }
+
+      #logo {
+        margin-left: 160px;
+      }
+      .navdiv {
+        padding: 20px 14px;
+      }
+
+      .navdiv p {
+        font-size: 15px;
+        color: white;
+        font-size: 10px;
+      }
+      .navdiv:hover {
+        background-color: rgb(105, 117, 143);
+      }
+
+      #slideshow {
+        background-color: rgba(168, 43, 46, 255);
+        height: 260px;
+        display: flex;
+      }
+
+      #slideimage{
+        width: 75vw;
+        margin: 5px 153px;
+        border-radius: 5px;
+      }
+      #main{
+        width: 75vw;
+        margin: 5px 153px;
+       }
+       #div_1{
+         background-color:rgb(122, 33, 33)
+       }
+       #div_1 p{
+         padding:20px;
+         color:white;
+         font-size: 20px;
+       }
+       #div_2{
+         display: flex;
+      
+         height: 130px;
+         background-color: white;
+       }
+       .div2_child{
+        display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    margin: 10px 10px;
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    border-radius:5px;
+    transition-property:width,height;
+    transition-duration:1s;
+
+       }
+       .div2_child:hover{
+         width:85%;
+         height: 85%;
+       }
+       .div2_child img{
+         margin-right: 20px;
+}
+#seperate{
+  width: 458px;
+  border: solid 2px grey;
+  margin:10px;
+  border-radius:10px;
+  transition-property:width,height;
+  transition-duration: 1s;
+  
+ 
+}
+#seperate:hover{
+  width:470px;
+  height:90%;
+}
+#div_inner{
+  display: flex;
+  justify-content:center;
+}
+#seperate p{
+  font-size:12px;
+  margin: 5px;
+}
+.div2_child h3{
+  font-size: small;
+  font-weight:bold;
+}
+#outerdiv{
+  background-color:rgba(232,233,239,255);
+}
+#div_two{
+  background-color: rgba(23, 33, 50, 255);
+}
+#div_two p{
+  color: white;
+  padding: 15px;
+}
+#div_inner{
+  
+  background-color:white;   
+}
+#match{
+  display:flex;
+}
+.a{
+  display: flex;
+  margin:10px;
+  align-items:center;
+
+}
+.a h3{
+  margin:10px 40px 10px 10px;
+  font-size: 15px;
+}
+.div_innerchild{
+ justify-content:centre;
+
+}
+.div_innerchild img{
+  width:30px;
+  height:20px;
+}
+.black{
+  width: 1px;
+  height: 48px;
+  color: black;
+}
+.toss{
+  background-color:rgb(209, 157, 59);
+  border-radius:10px;
+}
+.toss{
+  margin:10px;
+}
+#completed{
+  background-color:rgba(23, 33, 50, 255);
+}
+#completed p{
+  color: white;
+  padding: 15px;
+}
+#grid{
+  display:grid;
+  grid-template-columns: 50% 50%;
+  background-color:white;
+
+}
+#footer{
+            display: flex;
+        align-items: center;
+        background-color: rgba(23, 33, 50, 255);
+        height: 100px;
+        }
+        #divone{
+            margin-left:10vw;
+            font-family: Montserrat;
+            color: white;
+        }
+        #divone p{
+            font-size:12px;
+        }
+
+        #divtwo{
+            margin-left:10vw;
+            font-family: Montserrat;
+            }
+            #divtwo a{
+                color: white; 
+                text-decoration:none;
+                margin-right:10px;
+                font-size:14px;
+            } 
+            #divtwo a:hover{
+                color:orangered;
+
+            }
+        #divthree{
+            margin-left:10vw;
+            font-family: Montserrat;
+            color: rgb(218, 216, 216);
+        }
+</style>
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="index.html">
+      <div id="logo">
+        <img src="https://www.cricket.com/static/cricket.com.svg" />
+      </div>
+    </a>
+      <div id="cont">
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+              <p>Fantasy Research</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+              />
+              <p>Criclytics</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+              />
+              <p>Schedule</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+              />
+              <p>Series</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
+              />
+              <p>News</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/video-icon.svg"
+              />
+              <p>Videos</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+              />
+              <p>Players</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="link">
+          <a href="">
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/teams-icon.svg"
+              />
+              <p>Teams</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="navdiv" onclick="login()">
+          <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+          <p>Profile</p>
+        </div>
+      </div>
+    </nav>
+<div id="outerdiv">
+  <img id="slideimage" src="images/criclytics.PNG" />
+
+   
+
+    <div id="main">
+      <div id="div_1">
+        <p>PSL,2021</p>
+      </div>
+      <div id="div_2">
+        <div class="div2_child">
+        <img src="https://www.cricket.com/static/svgs/final_four_active.svg">
+        <h3>FINAL 4 PREDICTOR</h3>
+      </div>
+<div class="div2_child">
+  <img src="https://www.cricket.com/static/svgs/player_index_active.svg">
+  <h3>MOST VALUABLE PLAYER</h3>
+</div>
+      </div>
+      <div id="div_two">
+        <p>UPCOMING</p>
+      </div>
+      <div id="div_inner">
+        <div id='seperate'>
+        <p>Match 23-Pakistan Super Legue</p>
+   <div id='match'>
+    
+      <div class="div_innerchild">
+        <div class='a'> <img src="https://images.cricket.com/teams/1511_flag.png">
+          <h3>QUE</h3> </div>
+          <div class='a'> <img src="https://images.cricket.com/teams/1513_flag.png">
+            <h3>LAH</h3> </div>
+      </div>
+      <div class='black'></div>
+      <div class="div_innerchild">
+        <div class='a'> 
+          <h3>15th JUNE</h3> </div>
+          <div class='a'>
+            <h3>6:30PM</h3> </div>
+      </div>
+    </div>
+           <button class='toss'>5 hours 45 mins  to Toss</button>
+
+          </div>
+      
+          <div id='seperate'>
+            <p>Match 23-Pakistan Super Legue</p>
+       <div id='match'>
+        
+          <div class="div_innerchild">
+            <div class='a'> <img src="https://images.cricket.com/teams/1511_flag.png">
+              <h3>QUE</h3> </div>
+              <div class='a'> <img src="https://images.cricket.com/teams/1513_flag.png">
+                <h3>LAH</h3> </div>
+          </div>
+         
+          <div class="div_innerchild">
+            <div class='a'> 
+              <h3>15th JUNE</h3> </div>
+              <div class='a'>
+                <h3>6:30PM</h3> </div>
+          </div>
+        </div>
+               <button class='toss'>5 hours 45 mins  to Toss</button>
+    </div>
+          
+
+
+        </div>
+
+<div id="completed">
+  <p>COMPLETED</p>
+</div>
+
+<div id="grid">
+  <div id='seperate'>
+  <p>Match 23-Pakistan Super Legue</p>
+<div id='match'>
+
+<div class="div_innerchild">
+  <div class='a'> <img src="https://images.cricket.com/teams/1511_flag.png">
+    <h3>QUE</h3> </div>
+    <div class='a'> <img src="https://images.cricket.com/teams/1513_flag.png">
+      <h3>LAH</h3> </div>
+</div>
+<div class='black'></div>
+<div class="div_innerchild">
+  <div class='a'> 
+    <h3>15th JUNE</h3> </div>
+    <div class='a'>
+      <h3>6:30PM</h3> </div>
+</div>
+</div>
+     <button class='toss'>5 hours 45 mins  to Toss</button>
+
+    </div>
+
+    <div id='seperate'>
+      <p>Match 23-Pakistan Super Legue</p>
+ <div id='match'>
+  
+    <div class="div_innerchild">
+      <div class='a'> <img src="https://images.cricket.com/teams/1511_flag.png">
+        <h3>QUE</h3> </div>
+        <div class='a'> <img src="https://images.cricket.com/teams/1513_flag.png">
+          <h3>LAH</h3> </div>
+    </div>
+   
+    <div class="div_innerchild">
+      <div class='a'> 
+        <h3>15th JUNE</h3> </div>
+        <div class='a'>
+          <h3>6:30PM</h3> </div>
+    </div>
+  </div>
+         <button class='toss'>5 hours 45 mins  to Toss</button>
+</div>
+<div id='seperate'>
+  <p>Match 23-Pakistan Super Legue</p>
+<div id='match'>
+
+<div class="div_innerchild">
+  <div class='a'> <img src="https://images.cricket.com/teams/1511_flag.png">
+    <h3>QUE</h3> </div>
+    <div class='a'> <img src="https://images.cricket.com/teams/1513_flag.png">
+      <h3>LAH</h3> </div>
+</div>
+<div class='black'></div>
+<div class="div_innerchild">
+  <div class='a'> 
+    <h3>15th JUNE</h3> </div>
+    <div class='a'>
+      <h3>6:30PM</h3> </div>
+</div>
+</div>
+     <button class='toss'>5 hours 45 mins  to Toss</button>
+
+    </div>
+    <div id='seperate'>
+      <p>Match 23-Pakistan Super Legue</p>
+    <div id='match'>
+    
+    <div class="div_innerchild">
+      <div class='a'> <img src="https://images.cricket.com/teams/1511_flag.png">
+        <h3>QUE</h3> </div>
+        <div class='a'> <img src="https://images.cricket.com/teams/1513_flag.png">
+          <h3>LAH</h3> </div>
+    </div>
+    <div class='black'></div>
+    <div class="div_innerchild">
+      <div class='a'> 
+        <h3>15th JUNE</h3> </div>
+        <div class='a'>
+          <h3>6:30PM</h3> </div>
+    </div>
+    </div>
+         <button class='toss'>5 hours 45 mins  to Toss</button>
+    
+        </div>
+
+        
+      
+
+    
+
+
+  </div>
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+</div>
+<footer id="footer">
+  <div id="divone">
+   <img src="https://www.cricket.com/static/svgs/cricket-logo.svg">
+    <p>Cricket like never before</p>
+    </div>
+
+  <div id="divtwo">
+      <a href="https:"#">Term of use</a>
+      <a href="https:"#">Privacy Policy</a>
+      <a href="https:"#">Cookies Policy</a>
+  </div>
+  <div id="divthree">
+      <h5>follow us on</h5>
+      <p>@2020 Cricket.com | All right reserved</p>
+  </div>
+
+</footer>
+
+ 
+
+
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+<script>
+  function login() {
+    window.location.href = "projectlogin.html";
+  }
+
+  function slide() {
+    const arr = [
+      "images/criclytics.PNG",
+      "images/match prediction.PNG",
+      "images/com_stats.PNG",
+    ];
+    let image = document.getElementById("slideimage");
+    let i = 1;
+    setInterval(function () {
+      image.setAttribute("src", arr[i]);
+      i++;
+      if (i == 3) {
+        i = 0;
+      }
+    }, 2000);
+  }
+  slide();
+</script>
