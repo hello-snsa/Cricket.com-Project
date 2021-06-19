@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
+    
+        <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
+    
+        <link rel="preload" href="../style/style.css" as="style">
+        <link rel="stylesheet" href="../style/style.css" data-n-g="">
+    
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;display=swap" rel="stylesheet">
+    <style>
+        .articalContainer{
+            /* margin-top:10%; */
+            padding-top: 1%;
+        }
+
+    
+        #newsPageButton2{
+            background-color: #C63027 ;
+            color: white;
+        }
+     
+    </style>
+
+<script>
+       function newsPageChangeColor(paraId,forwardingUrl){
+            let btnColor=document.getElementById(`newsPageButton${paraId}`);
+            let allBtn= document.getElementsByClassName('newsPageButton');
+            for(let i=0; i<5;i++)
+            {
+                allBtn[i].style.background="#E8E9EF";
+                allBtn[i].style.color="black";
+
+
+            }
+
+            btnColor.style.background="#C63027";
+            btnColor.style.color="white";
+            window.location.href=`./${forwardingUrl}`;
+
+        }
+
+    </script>
+    
+    </head>
+<body>
+
+<!-- Header Part -->
+
+<nav id="nav">
+    <a href='/index.html'>
+    <div id="logo">
+    <img src="https://www.cricket.com/static/cricket.com.svg" />
+  </div></a>
+
+  <div id="cont">
+
+     <div class="link">
+    <a href='/index.html'>
+    <div class="navdiv">
+       
+      <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+      <p>Fantasy Research</p>
+   
+    </div>
+</a>
+</div>  
+
+<div class="link">
+    <a href='/criclytics/criclytics.html'>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+          />
+          <p>Criclytics</p>
+        </div>
+    </a>
+</div> 
+     
+   
+<div class="link">
+    <a href=''>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+      />
+      <p>Schedule</p>
+    </div>
+</a>
+</div> 
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+      />
+      <p>Series</p>
+    </div>
+</a>
+</div> 
+
+<div class="link">
+<a href='/news/latest.html'>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
+      />
+      <p>News</p>
+    </div>
+</a>
+</div> 
+
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+      <p>Videos</p>
+    </div>
+</a>
+</div>
+
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+      />
+      <p>Players</p>
+    </div>
+</a>
+</div>
+
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+      <p>Teams</p>
+    </div>
+</a>
+</div>
+
+
+
+    <div class="navdiv" onclick="login()">
+      <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+      <p>Profile</p>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</nav>
+
+<!-- End Header part -->
+
+
+
+
+    <!-- News And Articles -->
+    <div class="mainDiv">
+
+        <div class="midBodyMainDiv">
+
+            <!-- Headline part -->
+            <div class="newsMargin">
+    <h1 class="newsPageHeadlineDiv" style="margin-top: -1%; margin-bottom: -1%;margin-left: -2%;">News &amp; Articles </h1>
+</div>
+
+
+<!-- End Headline part -->
+<div >
+    <button class="newsPageButton" id="newsPageButton1" onclick="newsPageChangeColor(1,'latest.html')">LATEST</button>
+    <button class="newsPageButton" id="newsPageButton2" onclick="newsPageChangeColor(2,'newsPage.html')">NEWS</button>
+    <button class="newsPageButton" id="newsPageButton3" onclick="newsPageChangeColor(3,'onThisDay.html')">ON THIS DAY</button>
+    <button class="newsPageButton" id="newsPageButton4" onclick="newsPageChangeColor(4,'matchRelated.html')">MATCH RELATED</button>
+    <button class="newsPageButton" id="newsPageButton5" onclick="newsPageChangeColor(5,'features.html')">FEATURES</button>
+
+</div>
+
+            <div class="midBodyHeaderDiv">
+               
+    
+                <!-- Started from Here -->
+    
+                <!-- Starting new div to display Article image and texts -->
+    
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/rahaneNews.html">
+                <div class="articalImageDiv">
+                    <img src="../images/jpg/RahaneNews.jfif"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Rahane offers batting tips to India Women ahead of one-off Test against England Women  </h2>
+                    <div class="subHeadlineDiv">The India batsman was requested by women's team head coach Ramesh Powar for a session
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">14 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/hasanAliNews.html">
+                <div class="articalImageDiv">
+                    <img src="../images/jpg/hasanAli.jfif"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Hasan Ali decides to stay back for PSL 2021 </h2>
+                    <div class="subHeadlineDiv">A day after opting out of the tournament, the Pakistan pacer decides to stay back in the UAE</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">14 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    <div class="articalContainer">
+        <div> <a
+                href="../news/RohitNews.html">
+                <div class="articalImageDiv">
+                    <img src="../images/jpg/rohitNews.jfif"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        If the ball is moving around, Rohit will have his struggles: Styris </h2>
+                    <div class="subHeadlineDiv">The former New Zealand all-rounder reckons Rohit does not move his feet well early on which could be a cause for concern</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">14 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/ashwinNews.html">
+                <div class="articalImageDiv">
+                    <img src="../images/jpg/ashwinNews.jfif"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Ashwin kept away from cricket for 6 months to avoid ban: Ajmal </h2>
+                    <div class="subHeadlineDiv">The former Pakistan spinner alleges ICC of favouritism, tilting towards India</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">13 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <hr/>
+    
+    <div class="articalContainer">
+        <div> <a
+                href="../news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
+                <div class="articalImageDiv">
+                    <img src="../images/png/1.png"/>
+                </div>
+                <div >
+                    <h2 class="articalHeaderDiv" >
+                        Dhawan to lead India in Sri Lanka, Bhuvneshwar Kumar to be his deputy </h2>
+                    <div class="subHeadlineDiv">Sakariya earns a maiden call-up while Iyer, Natarajan continue
+                        to be rested</div>
+                        </div>
+                    <div class="articalFotterDiv">
+                    <div class="authorDiv">cricket.com staff</div>
+                    <div class="publishingDateDiv">10 Jun 2021</div>
+                        </div>
+                </div>
+            </a>
+        </div>
+    <!-- <hr/> -->
+    
+    
+    
+                <!-- </div> -->
+    
+            </div>
+        </div>
+        </div>
+        
+        <!-- End News And Articles -->
+
+        <!-- Footer Part -->
+<footer id="footer">
+    <div id="div_1">
+     <img src="https://www.cricket.com/static/svgs/cricket-logo.svg">
+      <p>Cricket like never before</p>
+      </div>
+
+    <div id="div_2">
+        <a href="https:"#">Term of use</a>
+        <a href="https:"#">Privacy Policy</a>
+        <a href="https:"#">Cookies Policy</a>
+    </div>
+    <div id="div_3">
+        <h5>follow us on</h5>
+        <p>@2020 Cricket.com | All right reserved</p>
+    </div>
+
+  </footer>
+
+
+<!-- End Footer Part -->
+
+</body>
+</html>

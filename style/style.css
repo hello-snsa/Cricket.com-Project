@@ -1,0 +1,796 @@
+*{
+    font-family: Montserrat;   
+}
+a{
+   text-decoration: none; 
+   color: black;
+}
+body{
+    height:100vh;
+     width: 98vw; 
+    background-color:#e8e9ef;
+    box-sizing:border-box;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.mainDiv{
+width: 65%;
+margin-left: 17.5%;
+top: -1;
+}
+
+.midBodyMainDiv{
+    margin-top:1rem;
+    width: 100%;
+}
+.midBodyHeaderDiv{
+font-family: Montserrat;
+background-color: #fff;
+border-radius: 0.5%;
+padding-top:.5rem;
+
+}
+
+.headLineDiv{
+    display:flex;
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    justify-content:space-between;
+}
+.headLineDiv>h2{
+font-size:.75rem;
+font-weight:600;
+}
+
+.articalContainer{
+    display:flex;
+    width:100%;
+    height: 14rem;
+    }
+
+.articalImageDiv{
+    width:48%;
+    height: 90%;
+    float: left;
+}
+
+.articalImageDiv>img{
+       width:100%; 
+       height:100%; 
+       object-fit: cover;
+       margin-left: 1rem;
+       margin-right: 1rem;
+       margin-top: 0.5rem;
+       float:left;
+}
+.articalTextDiv{
+    width:48%;
+}
+.articalHeaderDiv{
+    width:45%;
+    height: 100%;
+    font-size:1rem;
+    color:#141b2f;
+    font-weight:600;
+    margin-left: 52%;
+    margin-top: 01rem;
+    }
+
+.subHeadlineDiv{
+    font-size:.875rem;
+    font-weight:400;
+    width:45%;
+    height: 100%;
+    margin-left: 52%;
+}
+.articalFotterDiv{
+    margin-top: 1%;
+}
+
+     .authorDiv{
+        font-weight:500;
+        padding-left:.25rem;
+        color: #000;
+        font-weight: 500;
+        font-size: .75rem;
+        margin-left: 4%;
+        float:left;
+    }
+
+.publishingDateDiv{
+        font-size:.75rem;
+        font-weight:500;
+        text-align: right;
+        margin-right: 2%;
+}
+
+
+
+
+/*  ================Navigation Part============================== */
+
+
+/*  ================News Page Artical============================== */
+
+.newsImageDiv{
+    width:100%;
+    height:100%;
+}
+.newsImageDiv>img{
+    width:100%;
+    height:100%;
+}
+
+.newsArticalDiv{
+    display:flex;
+    flex-wrap:wrap;
+    padding-left:0;
+    padding-right:0;
+    font-family: Montserrat;
+}
+.newsMainArticalDiv{
+    background-color:#fff;
+    width:60%;
+    border-radius:.25rem;
+    border-right-style:solid;
+    border-right-width:1px;
+    border-color:#eee;
+    margin-top:-2rem;
+    margin-top:0;
+    margin-bottom:1rem;
+    position:relative;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.newArticalContainerDiv{
+    margin:0.5rem;
+    margin-top:2rem;
+}
+
+.newsDateDiv{
+    float:left;
+    font-size:x-small;
+
+}
+.newsAuthorContainerDiv{
+font-size:x-small;
+margin-left: 80%;
+margin-top: 0.5%;
+}
+.newsAuthorContainerDiv>img{
+float:left;
+}
+.newsAuthorDiv{
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+
+.newsArticalHeadlineDiv{
+  font-size:0.75rem;
+  font-weight:700;
+  margin-top: -0.5rem;
+}
+
+.newsItalicSummaryDiv>h2{
+    font-size:1rem;
+    font-family:helvetica neue,helvetica,sans-serif;
+    color:#777;
+    font-style:italic;
+}
+.newsArticalContentDiv{
+    font-size: small;
+
+}
+
+.newsHeart{
+    display:flex;
+    z-index:9999;
+    flex-direction:column;
+
+}
+.newsHeartImageDiv{
+    z-index:9999;
+    background-color:hsla(0,0%,100%,.5);
+    right:0;
+    font-weight:800;
+    font-size:.875rem;
+    border-color: transparent;
+}
+.newsHeartImageDiv>imgs{
+    height: 25px; 
+    width: 25px;
+    box-shadow:0 0 4px 2px rgba(0,0,0,.2);
+    padding:.5rem;
+    z-index:9999;
+    border-color:#f4f4f4;
+    background-color:#fff;
+    text-align:center;
+    width:40%;
+    padding:.25rem;
+    border-radius:100%;
+    margin-right:.5rem;
+    display:none;    
+}
+
+.newsHeartImageDiv>p{
+display:block;
+margin-top:.25rem;
+margin-right:.5rem;
+}
+
+.newsRelatedArticalDiv{
+    background-color:#fff;
+    width:38%;
+    border-radius:.25rem;
+    margin-top:-2rem;
+    margin-top:0;
+    margin-bottom:1rem;
+}
+/* ================Featured Video=============================== */
+
+.outerContainer{
+    padding-top:1rem;
+    padding-bottom:1rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-left:.5rem;
+    padding-right:.5rem;
+    overflow:hidden;
+}
+.fVideosContainer{
+    display:flex;
+}
+.fVideosScreenLink{
+    display:flex;
+    flex-direction:column;
+    margin-top:.5rem;
+    margin-bottom:.5rem;
+    margin-right:.5rem;
+    margin-right:1rem;
+}
+.fVideosScreenImageDiv{
+width:16rem;
+height:9rem;
+display:flex;
+flex-shrink:0;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+background-color:#333;
+}
+
+.fVideosScreenImageSpan{
+    display: inline-block;
+}
+.fVideosScreenImageDiv>img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+.fvideosScreenHeading{
+    -webkit-line-clamp: 2;
+    font-size:.75rem;
+    margin-top:.5rem;
+    font-weight:500;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    line-height:16px;
+    -webkit-box-orient:vertical;
+    height:2rem;
+    height:2rem;
+    line-height:1.25;
+    box-sizing:border-box;
+    margin:0;
+    padding-right:.25rem;
+}
+
+
+/* ================Poll style=============================== */
+.pollContainerDiv{
+    font-family: Montserrat;
+    width:100%;
+    background-color:#fff;
+    border-radius:.25rem;
+
+}
+.pollHeadingPart{
+    display:flex;
+    justify-content:space-between;
+    padding:0.5rem;
+    font-size:.75rem;
+}
+
+.pollHeadingPart>h2{
+    font-size:.75rem;
+    font-weight:600;
+
+}
+
+.pollVote{
+    color:#ff6300;
+}
+.pollBottomPart{
+   display:flex;
+   justify-content:space-between;
+   /* flex-wrap: wrap; */
+
+
+}
+.pollBottonTextPart{
+     font-size:.875rem;
+    font-weight:500;
+    /* width:100%; */
+    width:50%;
+    padding:1rem;
+    line-height:1.5;
+}
+/* .pollPart{
+    /* width:100%; */
+    /* width:10%; */
+    /* display:flex;
+    flex-wrap:wrap; */
+/* } */ 
+/* .pollPartContainer{
+    /* width:100%; */
+    /* cursor:pointer; */
+/* } */ 
+.pollDiv{
+    display:flex;
+    background-color:#eee;
+    border-radius:.25rem;
+    margin:.5rem;
+    justify-content:space-between;
+    position:relative;
+    align-items:center;
+    z-index:0;
+}
+.pollName{
+    padding-top:.5rem;
+    padding-bottom:.5rem;
+    padding-left:.5rem;
+    font-size:.75rem;
+    color:#000;
+}
+.pollPercentage{
+    color:#000;
+    margin-right:.5rem;
+    font-size:.75rem;
+    z-index:0;
+}
+  :root {
+    
+    --poll1:58%;
+    
+  }
+.pollColor1{
+    position:absolute;
+    height:100%;
+    border-radius:.25rem;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    /* width: 40%;  */
+    /* width: var(--poll1);  */
+    background-color:#19A974;
+    z-index: -1;
+    
+    }
+.pollColor2{
+    position:absolute;
+    height:100%;
+    border-radius:.25rem;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    /* width: 15%;  */
+    background-color:gray; 
+    z-index: -1;
+    
+    }
+.pollColor3{
+    position:absolute;
+    height:100%;
+    border-radius:.25rem;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    /* width: 25%;  */
+    background-color:gray; 
+    z-index: -1;
+    
+    }
+.pollColor4{
+    position:absolute;
+    height:100%;
+    border-radius:.25rem;
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    /* width: 20%;  */
+    background-color:gray; 
+    z-index: -1;
+    
+    }
+
+
+/* ===============Footer Part======================================= */
+
+#footer{
+    display: flex;
+    align-items: center;
+    background-color: rgba(23, 33, 50, 255);
+    height: 100px;
+    /* width: 100%; */
+    margin-right: -.8%;
+    margin-left: 0px;
+    }
+    #div_1{
+        margin-left:10vw;
+        font-family: Montserrat;
+        color: white;
+    }
+    #div_1 p{
+        font-size:12px;
+    }
+    
+    #div_2{
+        margin-left:10vw;
+        font-family: Montserrat;
+        }
+        #div_2 a{
+            color: white; 
+            text-decoration:none;
+            margin-right:10px;
+            font-size:14px;
+        } 
+        #div_2 a:hover{
+            color:orangered;
+    
+        }
+    #div_3{
+        margin-left:10vw;
+        font-family: Montserrat;
+        color: rgb(218, 216, 216);
+    }
+
+
+
+
+
+/* ===============News Page ======================================= */
+
+.newsPageHeadlineDiv{
+    font-size:1.3rem;
+    color:rgba(0,0,0,.7);
+    font-weight:700;
+    padding-top:.5rem;
+    padding-bottom:1rem;
+    padding-left:1rem;
+    /* margin-top:10% ; */
+    /* margin-bottom:10% ; */
+    display:block;
+font-family: Montserrat;
+}
+
+.newsMargin{
+    margin-top: 6rem;
+}
+.newsPageButton{
+    /* color:white; */
+    width: 8.5rem;
+    height: 2rem;
+    /* border: transparent; */
+    border-radius: 7%;
+    margin-bottom: 1%;
+    margin-right: 1.5%;
+    /* padding-bottom: 1%;
+    padding-top: 1%; */
+    /* margin-top: -10rem; */
+    
+}
+
+/* ====================Data Digest================================== */
+.dataDigestContainer{
+    width:100%;
+    background-color:#fff;
+    border-radius:.25rem;
+   padding-left:1rem;
+   padding-right:1rem;
+}
+.dataDigestImageContainer{
+    margin-top: 0.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    overflow:hidden;
+}
+.singleImageContainer{
+    display:flex;
+}
+.singleImageDiv{
+    display:flex;
+   flex-shrink:0;
+    margin-top:1rem;margin-bottom:1rem;
+    margin-right:1rem;
+   border-radius:.25rem;
+ width:12rem;
+  height:12rem;
+  position:relative;
+  display: inline-block;
+}
+.singleImageDiv>img{
+  border-radius:.25rem;
+  width:100%;
+ height:100%;
+  object-fit:cover;
+
+
+
+
+
+}
+
+
+
+
+
+
+/* ====================Cricklytics================================== */
+
+.cricBelowDiv{
+    background-color:#fff;
+    margin-bottom:1rem;
+    margin-top:1rem;
+    padding-bottom: 0.5rem;
+}
+
+.cricHeadingDiv{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:.5rem;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+
+.cricHeading{
+    font-size:1rem;
+    font-weight:500;
+    color:#141b2f;
+}
+.cricHeading>img{
+   font-size:2em;
+   margin:.5em ;
+   width:1rem;
+}
+
+.cricTeamNameDiv{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top: -0.7rem;
+    margin-bottom: -0.7rem;
+    margin-left: -0.3rem;
+}
+
+.cricTeam{
+    display:flex;
+    align-items:center;
+    font-weight: 600;
+    /* margin-left: 10px;; */
+}
+
+.cricTeam>img{
+    font-size:2em;
+    margin:.67em 0;
+    width:1.7rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.fancyDiv{
+   padding-top:0.5rem;
+   padding-bottom:0.5rem;
+}
+
+.cricDataDiv{
+    display:flex;
+    font-weight:500;
+    align-items:center;
+    padding-left:.5rem;
+    padding-right:.5rem;
+    padding-top:.25rem;
+    padding-bottom:.25rem;
+    justify-content:space-between;
+    font-size:.875rem;
+    font-weight:600;
+}
+
+.cricDataDiv>span{
+    font-size:.75rem;
+    color:gray;
+ }
+
+ .cricColorDiv{
+    display:flex;
+   align-items:center;
+   justify-content:space-between;
+ }
+ 
+.cricInsideColor{ 
+    height: 6px;
+    background-color:#eee;
+    border-radius:.25rem;
+    margin:.5rem;
+    align-items:center;
+    width:50%;
+    position:relative;
+    /* position:absolute; */
+    z-index:0;
+    /* z-index:1;  */
+    opacity:1;
+ }
+ .cricColor1-1,.cricColor2-1,.cricColor1-2,.cricColor2-2{
+    z-index: 0; 
+    position:absolute;
+    height:100%;
+    border-radius:.25rem;
+ }
+ .cricColor1-1{
+    background-color:rgb(231, 4, 15) ; 
+    right:0;
+ }
+ .cricColor2-1{
+    background-color: rgb(133, 137, 151);
+ }
+ .cricColor1-2{
+    background-color:rgb(243, 130, 135)  ;
+    right:0;
+ }
+ .cricColor2-2{
+    background-color: rgb(10,20,47);
+ }
+
+
+
+
+/* ====================================================== */
+/* =========================Extra============================= */
+
+/* 
+#nav{
+    width: 98.9vw;
+}
+#footer{
+    width: 98.9vw;
+
+} */
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+} */
+#nav {
+  display: flex;
+  align-items: center;
+  background-color: rgba(23, 33, 50, 255);
+  height: 80px;
+  position:sticky;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+#cont {
+  display: flex;
+  width: 650px;
+  margin-left: 80px;
+  height: 100%;
+}
+#cont {
+  text-align: center;
+  width: 90%;
+  margin-left: 15vw;
+}
+#cont > div:nth-child(1) {
+  width: 120px;
+}
+
+#logo {
+  margin-left: 170px;
+}
+.navdiv {
+  padding: 20px 14px;
+}
+
+.navdiv p {
+  font-size: 15px;
+  color: white;
+  font-size: 10px;
+  
+  }
+  .navdiv:hover{
+      background-color:rgb(105, 117, 143);
+  }
+  #slideshow {
+  background-color: rgba(168, 43, 46, 255);
+  height: 260px;
+  display:flex;
+}
+
+#maroon{
+    display:flex;
+  /* width: 100%; */
+  height:280px;
+  background-color:rgba(172,44,47,255);
+  justify-content: center;
+  margin-top: 4.5rem;
+  margin-right: -0.8rem;
+  margin-bottom: -1rem;
+  /*  */
+  position: relative;
+ 
+}
+#matches{
+  width:500px;
+  margin:25px 5px 25px 5px;
+  border-radius: 0.5rem;
+ /*  */
+ /* position: relative; */
+ /* z-index:1; */
+ }
+ #btn_prev,#btn_next{
+   width: 40px;
+   height: 40px;
+   margin: 100px 15px;
+   
+ }
+ #table{
+   display:flex;
+   justify-content:center;
+ }
+ #table_image{
+   width:75%;
+   /*  */
+   position: relative;
+   /* z-index:1; */
+}
+    #table>img{
+        width:65%;
+        border-radius: 0.5rem;
+    }
+   
+/* new update */
+
+
+#left{
+    width: 420px;
+    margin:52px 5px 25px 5px;
+    border-radius: 5px;
+    height:140px;
+    position: relative;
+    right: -100px;
+     z-index:0;
+     display:none;
+  }
+  #right{
+    width: 420px;
+    margin:52px 5px 25px 5px;
+    border-radius: 5px;
+    height:140px;
+    position: relative;
+    left: -100px;
+     z-index:1;
+     display:none;
+  }
+
+
+
+
+
+
+
