@@ -18,20 +18,24 @@ Tools & Technology Used
 7) VS Code editor
 
 KEY CONTRIBUTIONS :-
+
 >By Bhaskar Rai
-9.Navbar and Footer part.
-10.Centre functional cards ,which shows Match information and data.
-11.Criclytics page.
-12.Log-in Functionality and Discription Form Page.
+
+9)Navbar and Footer part.
+10)Centre functional cards ,which shows Match information and data.
+11)Criclytics page.
+12)Log-in Functionality and Discription Form Page.
 
 >By Md Ali Shahanshah :-
-13. Fan Poll
-14.News Feed on the Home Page.
-15.News Page.
-16.Videos on the Home page.
-17.Inner Data page in Criclytics Page.
-18.Merging of the project.
-19. Digest Data
+
+13) Fan Poll. 
+14) News Feed on the Home Page.
+15) News Page.
+16) Artical Page
+17) Videos on the Home page.
+18) Inner Data page in Criclytics Page.
+19) Digest Data.
+20) Merging of the project
 
 About Our Project :-
 Our project is a clone of a Cricket.com web application , where we can watch live cricket scores, fantasy team approximations. Analytics of cricket,
