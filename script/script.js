@@ -1,8 +1,8 @@
 // localStorage.setItem('data','[40,15,25,20]')
-localStorage.setItem('localper[0]',40)
-localStorage.setItem('localper[1]',15)
-localStorage.setItem('localper[2]',25)
-localStorage.setItem('localper[3]',20)
+// localStorage.setItem('localper[0]',40)
+// localStorage.setItem('localper[1]',15)
+// localStorage.setItem('localper[2]',25)
+// localStorage.setItem('localper[3]',20)
 
 
 // var data=localStorage.getItem('data');
@@ -87,7 +87,7 @@ if(vote==null)
 
     changePercentages();
  
-    localStorage.setItem('vote',1);     
+    // localStorage.setItem('vote',1);     
     
   }
 }
@@ -120,8 +120,8 @@ function login() {
 
 let i=1;
 function next(){
- const data=['images/big1.png','images/big2.png','images/big3.png','images/big4.png','images/big5.png',]
-  const arr = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+ const data=['images/big1.PNG','images/big2.PNG','images/big3.PNG','images/big4.PNG','images/big5.PNG',]
+  const arr = ['images/image1.PNG','images/image2.PNG','images/image3.PNG','images/image4.PNG','images/image5.PNG'];
   if(i>4){
 i=0;
 }
@@ -138,8 +138,8 @@ next();
 let k =1;
 function previous(){
 
-  const sata=['images/big1.png','images/big2.png','images/big3.png','images/big4.png','images/big5.png',]
-  const array = ['images/image1.png','images/image2.png','images/image3.png','images/image4.png','images/image5.png'];
+  const sata=['images/big1.PNG','images/big2.PNG','images/big3.PNG','images/big4.PNG','images/big5.PNG',]
+  const array = ['images/image1.PNG','images/image2.PNG','images/image3.PNG','images/image4.PNG','images/image5.PNG'];
 if(k<1){
 k=4
 }
