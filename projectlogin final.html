@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+       
+      
+       
+        #container{
+            position: relative;
+            width: 35%;
+    height: 250px;
+    border: 1px solid black;
+    margin: 159px 420px;
+            
+  
+   }
+   #second{
+       padding:15% 10px;
+   }
+   p{
+       font-family:Montserrat;
+       color:grey;
+       font-size: 10px;
+       font-weight:bolder;
+   }
+   img{
+       width: 30px;
+
+   }
+   #btn{
+       width: 250px;
+       background-color:rgb(95, 90, 90);
+       color:white;
+       font-family:Montserrat;
+       margin: 20px 90px;
+       border-radius: 5px;
+       padding: 5px;
+}
+input{
+    font-family:Montserrat;
+    border: none;
+    border-bottom: 2px solid black;
+    width: 300px;
+    margin-left: 5px;
+}
+#inputbox{
+    display:flex;
+    
+}
+
+        
+    </style>
+</head>
+<body>
+<div id="container">
+   <div id="second"> <p>Login/Register to Cricket.com</p>
+   <div id="inputbox">
+        <img src="https://www.cricket.com/static/pngs/bigind.png">
+    <input type="phone" id="input" placeholder="Mobile Number">
+</div>
+    <button id="btn"  onclick="otp()">GET OTP</button>
+</div>
+</div>
+    
+</body>
+</html>
+<script>
+    function otp(){
+        let num = document.getElementById('input').value
+       // console.log(num)
+        if(num>=1000000000 && num<10000000000){
+           
+            window.location.href='otp.html'
+        }
+        else{
+            alert('Please Check Your Number')
+        }
+      
+    }
+</script>

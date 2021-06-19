@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    #sec {
+        width: 50%;
+        height: 90%;
+        border: 1px solid black;
+        margin: auto;
+    }
+
+    #cross img {
+        width: 10px;
+        height: 10px;
+    }
+
+    #cross {
+        margin: 10px 5px 20px 80%;
+    }
+
+    #image {
+        width: 25%;
+        margin: auto
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #inputbox .name img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #btn {
+        background-color: grey;
+        color: white;
+        width: 25%;
+        margin: 25px 239px 0px 239px;
+        padding: 8px;
+        border-radius: 8px;
+        font-family: Montserrat;
+    }
+
+    h5 {
+        text-align: center;
+        font-family: Montserrat;
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+    }
+
+    #social img {
+        margin: 2px 15px;
+        width: 60%;
+        height:60%;
+}
+#signout{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    background:none;
+    font-family: Montserrat;
+    font-size:12px;
+}
+#signout h3{
+    color: red;
+}
+#signout a{
+    text-decoration:none;
+}
+.name input{
+    background:transparent;
+    border:none;
+    border-bottom: 1px solid black;
+    width:70%;
+    font-family: Montserrat;
+}
+    
+
+
+</style>
+
+<body>
+    <section id="sec">
+        <div id="cross">
+            <a href="index.html">
+                <img alt="../images/svgs/RightSchevronBlack.svg" src="https://www.cricket.com/static/pngs/closeIcon.png"
+                    style=" margin-left:80%">
+            </a>
+        </div id='main'>
+
+        <div id="image">
+            <img src="https://www.cricket.com/static/svgs/loginteam.svg">
+
+        </div>
+        <div id="inputbox">
+            <div class="name" >
+                <img src="https://www.cricket.com/static/svgs/username.svg">
+                <input id="dn" type="text" placeholder="Display Name">
+                <img src="">
+            </div>
+
+            <div class="name">
+                <img src="https://www.cricket.com/static/svgs/phone.svg">
+                <input id="pn" type="phone" placeholder="Number">
+                <img src="">
+            </div>
+
+            <div class="name">
+                <img src="https://www.cricket.com/static/svgs/email.svg">
+                <input id="email" type="email" placeholder="Email">
+                <img src="">
+            </div>
+            <button id="btn" onclick="save()">Done</button>
+            <h5>Love CRICKET.COM? Share With Friends</h5>
+
+            <div id="social">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://cricket.com">
+                    <img src="https://www.cricket.com/static/svgs/fb.svg">
+                </a>
+
+                <a target="_blank" href="https://twitter.com/intent/tweet?url=http://cricket.com">
+                    <img src="https://www.cricket.com/static/svgs/colorTwiter.svg">
+                </a>
+
+                <a target="_blank" href="https://api.whatsapp.com/send?text=http://cricket.com">
+                    <img src="https://www.cricket.com/static/svgs/whatsapp.svg">
+                </a>
+            </div>
+
+            <div id="signout"><a href="index.html">
+                <h3>SIGN OUT</h3>
+            </a>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+</body>
+
+</html>
+<script>
+
+    function save() {
+
+    var dn = document.getElementById('dn').value
+    var pn = document.getElementById('pn').value
+    var email = document.getElementById('email').value
+    let object = {
+        name:dn,
+        phone:pn,
+        email:email
+    }
+    let arr;
+    arr = localStorage.getItem('form')
+
+    if(arr==null){
+        arr =[]
+    }
+    else{
+     arr = JSON.parse(localStorage.getItem('form'))
+    }
+   arr.push(object);
+   localStorage.setItem('form',JSON.stringify(arr))
+
+  alert('You are Registered Successfully')
+
+  window.location.href="index.html"
+}  
+</script>

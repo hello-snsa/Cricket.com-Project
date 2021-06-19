@@ -1,0 +1,93 @@
+body{margin:0;}
+body{height:100vh;background-color:#e8e9ef}
+​
+.br2{border-radius:.25rem}
+​
+.bg-white{
+    line-height: 1.15;
+-webkit-text-size-adjust: 100%;
+--swiper-theme-color: #007aff;
+--swiper-navigation-size: 44px;
+scroll-behavior: smooth;
+font-family: Montserrat;
+-webkit-tap-highlight-color: transparent;
+box-sizing: border-box;
+border-radius: .25rem;
+box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+background-color: #fff;
+}
+​
+.br1{border-radius:.125rem}
+​
+.bg-top{background-repeat:no-repeat}
+    
+.bg-top{background-position:top}
+​
+​
+​
+.cover{background-size:cover!important}
+​
+.divider{height:1px;background:linear-gradient(90deg,hsla(220,6%,90%,0),#e3e4e6,#e3e4e6,hsla(220,6%,90%,0))}
+​
+.dn{display:none}
+.db-ns{display:block}
+​
+​
+​
+.flex{display:flex}
+.flex-wrap{flex-wrap:wrap}
+.f7{font-size:.75rem}
+.fw6{font-weight:600}
+.flex-ns{display:flex}
+​
+.justify-between{justify-content:space-between}
+​
+​
+.mt3{margin-top:1rem}
+​
+#__next{
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    --swiper-theme-color: #007aff;
+    --swiper-navigation-size: 44px;
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+}
+​
+​
+​
+.pa3-l{padding:1rem}
+.ph2{padding-left:.5rem;padding-right:.5rem}
+.pointer:hover,.shadow-hover{cursor:pointer}
+.pv3{padding-top:1rem;padding-bottom:1rem}
+.pa3-ns{padding:1rem}
+​
+.relative{position:relative}
+​
+​
+.shadow-4{box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
+​
+.w-100{width:100%}
+.w-50-ns{width:50%}
+​
+​
+.border-box,a,article,aside,blockquote,body,code,dd,div,dl,dt,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,input[type=email],input[type=number],input[type=password],input[type=tel],input[type=text],input[type=url],legend,li,main,nav,ol,p,pre,section,table,td,textarea,th,tr,ul{box-sizing:border-box}
+​
+lazy-load-image-background{
+line-height: 1.15;
+-webkit-text-size-adjust: 100%;
+--swiper-theme-color: #007aff;
+--swiper-navigation-size: 44px;
+color: #000;
+scroll-behavior: smooth;
+font-family: Montserrat;
+-webkit-tap-highlight-color: transparent;
+display: inline-block;
+height: 100%;
+width: 100%;
+​
+}
+​
+​
