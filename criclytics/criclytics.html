@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
+    
+        <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
+    
+        <link rel="preload" href="style/style.css" as="style">
+        <link rel="stylesheet" href="style/style.css" >
+    
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
-
-    <link rel="preload" href="style/style.css" as="style">
-    <link rel="stylesheet" href="style/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;display=swap" rel="stylesheet">
-      
+        <script src="script/script.js"></script>
     <style>
       * {
         margin: 0px;
@@ -252,7 +253,7 @@ top: -1;
     <!-- Header Part -->
 
 <nav id="nav">
-  <a href='index.html'>
+  <a href='/index.html'>
   <div id="logo">
   <img src="https://www.cricket.com/static/cricket.com.svg" />
 </div></a>
@@ -260,7 +261,7 @@ top: -1;
 <div id="cont">
 
    <div class="link">
-  <a href='index.html'>
+  <a href='/index.html'>
   <div class="navdiv">
      
     <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
@@ -271,7 +272,7 @@ top: -1;
 </div>  
 
 <div class="link">
-  <a href='criclytics/criclytics.html'>
+  <a href='/criclytics/criclytics.html'>
       <div class="navdiv">
         <img
           src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
@@ -305,7 +306,7 @@ top: -1;
 </div> 
 
 <div class="link">
-<a href='/news/latest.html'>
+<a href='../news/latest.html'>
   <div class="navdiv">
     <img
       src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
@@ -363,7 +364,7 @@ top: -1;
 <!-- End Header part -->
   
 <div id="outerdiv">
-  <img id="slideimage" src="images/criclytics.PNG" />
+  <img id="slideimage" src="../images/criclytics.PNG" />
 
    
 
@@ -519,7 +520,7 @@ top: -1;
     </div>
     </div>
          <button class='toss' ><a style="text-decoration: none;"
-          href="criclytics/match24-T20-Blast.html"> GLA won by 6 wickets</a></button>
+          href="/criclytics/match24-T20-Blast.html"> GLA won by 6 wickets</a></button>
     
         </div>
 
@@ -577,14 +578,14 @@ top: -1;
 
 <script>
   function login() {
-    window.location.href = "projectlogin.html";
+    window.location.href = "../login/login.html";
   }
 
   function slide() {
     const arr = [
-      "images/criclytics.PNG",
-      "images/match prediction.PNG",
-      "images/com_stats.PNG",
+      "/images/criclytics.PNG",
+      "/images/match prediction.PNG",
+      "/images/com_stats.PNG",
     ];
     let image = document.getElementById("slideimage");
     let i = 1;
