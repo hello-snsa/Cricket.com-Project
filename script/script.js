@@ -87,7 +87,7 @@ if(vote==null)
 
     changePercentages();
  
-    // localStorage.setItem('vote',1);     
+    localStorage.setItem('vote',1);     
     
   }
 }
