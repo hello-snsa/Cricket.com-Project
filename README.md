@@ -21,10 +21,10 @@ KEY CONTRIBUTIONS :-
 
 >By Bhaskar Rai
 
-9)Navbar and Footer part.
-10)Centre functional cards ,which shows Match information and data.
-11)Criclytics page.
-12)Log-in Functionality and Discription Form Page.
+9) Navbar and Footer part.
+10) Centre functional cards ,which shows Match information and data.
+11) Criclytics page.
+12) Log-in Functionality and Discription Form Page.
 
 >By Md Ali Shahanshah :-
 
