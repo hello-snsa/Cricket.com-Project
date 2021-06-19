@@ -21,10 +21,11 @@
         color: white;
         font-weight: 400;
         font-size: small;
-        width: 10rem;
-        height: 1.5rem;
+        width: auto;
+        
+        height: auto;
         border:transparent;
-        border-radius: 8%;
+        border-radius:5%;
     }
 </style>
 </head>
@@ -33,114 +34,113 @@
 <!-- Header Part -->
 
 <nav id="nav">
-    <div id="logo">
-      <img src="https://www.cricket.com/static/cricket.com.svg" />
-    </div>
+  <a href='/index.html'>
+  <div id="logo">
+  <img src="https://www.cricket.com/static/cricket.com.svg" />
+</div></a>
 
-  
-    <div id="cont">
+<div id="cont">
 
-       <div class="link">
-      <a href=''>
-      <div class="navdiv">
-         
-        <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
-        <p>Fantasy Research</p>
+   <div class="link">
+  <a href='/index.html'>
+  <div class="navdiv">
      
-      </div>
-  </a>
-  </div>  
-  
-  
-  
-
-   
-  <div class="link">
-      <a href=''>
-          <div class="navdiv">
-            <img
-              src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
-            />
-            <p>Criclytics</p>
-          </div>
-      </a>
-  </div> 
-       
-     
-  <div class="link">
-      <a href=''>
-      <div class="navdiv">
-        <img
-          src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
-        />
-        <p>Schedule</p>
-      </div>
-  </a>
-</div> 
-
-<div class="link">
-  <a href=''>
-      <div class="navdiv">
-        <img
-          src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
-        />
-        <p>Series</p>
-      </div>
-  </a>
-</div> 
-
-<div class="link">
-  <a href=''>
-      <div class="navdiv">
-        <img
-          src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
-        />
-        <p>News</p>
-      </div>
-  </a>
-</div> 
-
-
-<div class="link">
-  <a href=''>
-      <div class="navdiv">
-        <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
-        <p>Videos</p>
-      </div>
-  </a>
-</div>
-
-
-<div class="link">
-  <a href=''>
-      <div class="navdiv">
-        <img
-          src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
-        />
-        <p>Players</p>
-      </div>
-  </a>
-</div>
-
-
-<div class="link">
-  <a href=''>
-      <div class="navdiv">
-        <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
-        <p>Teams</p>
-      </div>
-  </a>
-</div>
-
-
-
-      <div class="navdiv" onclick="login()">
-        <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
-        <p>Profile</p>
-      </div>
-    </div>
+    <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+    <p>Fantasy Research</p>
  
-  </nav>
+  </div>
+</a>
+</div>  
+
+<div class="link">
+  <a href='/criclytics/criclytics.html'>
+      <div class="navdiv">
+        <img
+          src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+        />
+        <p>Criclytics</p>
+      </div>
+  </a>
+</div> 
+   
+ 
+<div class="link">
+  <a href=''>
+  <div class="navdiv">
+    <img
+      src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+    />
+    <p>Schedule</p>
+  </div>
+</a>
+</div> 
+
+<div class="link">
+<a href=''>
+  <div class="navdiv">
+    <img
+      src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+    />
+    <p>Series</p>
+  </div>
+</a>
+</div> 
+
+<div class="link">
+<a href='/news/latest.html'>
+  <div class="navdiv">
+    <img
+      src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
+    />
+    <p>News</p>
+  </div>
+</a>
+</div> 
+
+
+<div class="link">
+<a href=''>
+  <div class="navdiv">
+    <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+    <p>Videos</p>
+  </div>
+</a>
+</div>
+
+
+<div class="link">
+<a href=''>
+  <div class="navdiv">
+    <img
+      src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+    />
+    <p>Players</p>
+  </div>
+</a>
+</div>
+
+
+<div class="link">
+<a href=''>
+  <div class="navdiv">
+    <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+    <p>Teams</p>
+  </div>
+</a>
+</div>
+
+
+
+  <div class="navdiv" onclick="login()">
+    <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+    <p>Profile</p>
+  </div>
+</div>
+
+
+  
+</div>
+</nav>
 
 <!-- End Header part -->
 
@@ -150,8 +150,7 @@
         <!-- Banner Image part -->
         <div class="newsImageDiv">
 
-            <img class="h5 w-100 object-cover h9-ns object-top"
-                src="https://s3.ap-south-1.amazonaws.com/image.cricket.com/temp%2Fdf5b03dc2452cf3db75c5f1f213b34189b7b3858.png"
+            <img src="https://s3.ap-south-1.amazonaws.com/image.cricket.com/temp%2Fdf5b03dc2452cf3db75c5f1f213b34189b7b3858.png"
                 alt="safari">
         </div>
         <!-- Artical Part -->
@@ -236,15 +235,14 @@
                     <div><p style="font-size:small; "><b>Tags</b></p></div> <br/>
                     <div><button class="btn" >India
                             vs New Zealand</button>
-                            <button class="btn" style="width:15rem;">ICC
-                            World Test Championship, 2021</button>
+                            <button class="btn" style="width:15rem;">ICC World Test Championship</button>
                            
                     </div>
                 </div> <br/>
             </div><!--End Main Artical Part -->
             
             <!-- Related Artical Part -->
-            <div class="newsRelatedArticalDiv" style="width: 40%;">
+            <div class="newsRelatedArticalDiv" style="width: 38.2%;">
 
                 <div>
                     <div style="margin-left: 1rem" >

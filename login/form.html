@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
+    
+        <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
+    
+        <link rel="preload" href="../style/style.css" as="style">
+        <link rel="stylesheet" href="../style/style.css" >
+    
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;display=swap" rel="stylesheet">
+
+        <script src="/script/script.js"></script>
+</head>
+<style>
+    #sec {
+        width: 50%;
+        height: 80%;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 7%;
+        margin-bottom: 5%;
+        margin-left: 30%;
+    }
+
+    #cross img {
+        width: 10px;
+        height: 10px;
+    }
+
+    #cross {
+        margin: 10px 5px 20px 80%;
+    }
+
+    #image {
+        width: 25%;
+        margin: auto
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    #inputbox .name img {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #btn {
+        background-color: grey;
+        color: white;
+        width: 25%;
+        margin: 25px 239px 0px 239px;
+        padding: 8px;
+        border-radius: 8px;
+        font-family: Montserrat;
+        margin-left: 38%;
+    }
+
+    h5 {
+        text-align: center;
+        font-family: Montserrat;
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+    }
+
+    #social img {
+        margin: 2px 15px;
+        width: 60%;
+        height:60%;
+}
+#signout{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    background:none;
+    font-family: Montserrat;
+    font-size:12px;
+}
+#signout h3{
+    color: red;
+}
+#signout a{
+    text-decoration:none;
+}
+.name input{
+    background:transparent;
+    border:none;
+    border-bottom: 1px solid black;
+    width:70%;
+    font-family: Montserrat;
+}
+.formCont{
+margin-left: -10%;
+}
+    
+
+
+</style>
+
+<body>
+    <!-- Header Part -->
+
+<nav id="nav">
+    <a href='/index.html'>
+    <div id="logo">
+    <img src="https://www.cricket.com/static/cricket.com.svg" />
+  </div></a>
+
+  <div id="cont">
+
+     <div class="link">
+    <a href='/index.html'>
+    <div class="navdiv">
+       
+      <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+      <p>Fantasy Research</p>
+   
+    </div>
+</a>
+</div>  
+
+<div class="link">
+    <a href='/criclytics/criclytics.html'>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+          />
+          <p>Criclytics</p>
+        </div>
+    </a>
+</div> 
+     
+   
+<div class="link">
+    <a href=''>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+      />
+      <p>Schedule</p>
+    </div>
+</a>
+</div> 
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+      />
+      <p>Series</p>
+    </div>
+</a>
+</div> 
+
+<div class="link">
+<a href='/news/latest.html'>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
+      />
+      <p>News</p>
+    </div>
+</a>
+</div> 
+
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+      <p>Videos</p>
+    </div>
+</a>
+</div>
+
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+      />
+      <p>Players</p>
+    </div>
+</a>
+</div>
+
+
+<div class="link">
+<a href=''>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+      <p>Teams</p>
+    </div>
+</a>
+</div>
+
+
+
+    <div class="navdiv" onclick="login()">
+      <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+      <p>Profile</p>
+    </div>
+  </div>
+  
+
+    
+  </div>
+</nav>
+
+<!-- End Header part -->
+    <section id="sec">
+        <div id="cross">
+            <a href="/index.html">
+                <img alt="../images/svgs/RightSchevronBlack.svg" src="https://www.cricket.com/static/pngs/closeIcon.png"
+                    style=" margin-left:80%">
+            </a>
+        </div id='main'>
+
+        <div id="image">
+            <img src="https://www.cricket.com/static/svgs/loginteam.svg">
+
+        </div>
+        <div id="inputbox">
+            <div class="name" >
+                <img src="https://www.cricket.com/static/svgs/username.svg">
+                <input id="dn" type="text" placeholder="Display Name">
+                <img src="">
+            </div>
+
+            <div class="name">
+                <img src="https://www.cricket.com/static/svgs/phone.svg">
+                <input id="pn" type="phone" placeholder="Number">
+                <img src="">
+            </div>
+
+            <div class="name">
+                <img src="https://www.cricket.com/static/svgs/email.svg">
+                <input id="email" type="email" placeholder="Email">
+                <img src="">
+            </div>
+            <div class="formCont">
+            <button id="btn" onclick="save()">Done</button>
+            <h5>Love CRICKET.COM? Share With Friends</h5>
+
+            <div id="social">
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://cricket.com">
+                    <img src="https://www.cricket.com/static/svgs/fb.svg">
+                </a>
+
+                <a target="_blank" href="https://twitter.com/intent/tweet?url=http://cricket.com">
+                    <img src="https://www.cricket.com/static/svgs/colorTwiter.svg">
+                </a>
+
+                <a target="_blank" href="https://api.whatsapp.com/send?text=http://cricket.com">
+                    <img src="https://www.cricket.com/static/svgs/whatsapp.svg">
+                </a>
+            </div>
+
+            <div id="signout"><a href="/index.html">
+                <h3>SIGN OUT</h3>
+            </a>
+            </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+    <!-- Footer Part -->
+<footer id="footer">
+    <div id="div_1">
+     <img src="https://www.cricket.com/static/svgs/cricket-logo.svg">
+      <p>Cricket like never before</p>
+      </div>
+
+    <div id="div_2">
+        <a href="https:" #"="">Term of use</a>
+        <a href="https:" #"="">Privacy Policy</a>
+        <a href="https:" #"="">Cookies Policy</a>
+    </div>
+    <div id="div_3">
+        <h5>follow us on</h5>
+        <p>@2020 Cricket.com | All right reserved</p>
+    </div>
+
+
+
+
+
+  </footer>
+
+
+<!-- End Footer Part -->
+</body>
+
+</html>
+<script>
+
+    function save() {
+
+    var dn = document.getElementById('dn').value
+    var pn = document.getElementById('pn').value
+    var email = document.getElementById('email').value
+    let object = {
+        name:dn,
+        phone:pn,
+        email:email
+    }
+    let arr;
+    arr = localStorage.getItem('form')
+
+    if(arr==null){
+        arr =[]
+    }
+    else{
+     arr = JSON.parse(localStorage.getItem('form'))
+    }
+   arr.push(object);
+   localStorage.setItem('form',JSON.stringify(arr))
+
+  alert('You are Registered Successfully')
+
+  window.location.href="/index.html"
+}  
+</script>
