@@ -1,8 +1,8 @@
 // localStorage.setItem('data','[40,15,25,20]')
-// localStorage.setItem('localper[0]',40)
-// localStorage.setItem('localper[1]',15)
-// localStorage.setItem('localper[2]',25)
-// localStorage.setItem('localper[3]',20)
+localStorage.setItem('localper[0]',40)
+localStorage.setItem('localper[1]',15)
+localStorage.setItem('localper[2]',25)
+localStorage.setItem('localper[3]',20)
 
 
 // var data=localStorage.getItem('data');
