@@ -109,11 +109,13 @@ function changePercentages() {
   let poll3Per =     document.getElementById("poll3Per");
   let poll4Per =     document.getElementById("poll4Per");
   let pollCount = document.getElementById("pollCount"); 
-  if(pollCount==null)
+  if(pCount == null)
   {
-      pollCount=612;
-  }
+    pCount=612;
+      
 
+  }
+  
 let localper1=  localStorage.getItem('localper[0]');
 let localper2=  localStorage.getItem('localper[1]');
 let localper3=  localStorage.getItem('localper[2]');
