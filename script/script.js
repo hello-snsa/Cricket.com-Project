@@ -88,7 +88,7 @@ if(vote==null)
         localStorage.setItem('localper[1]',per2);   
         localStorage.setItem('localper[2]',per3);   
         localStorage.setItem('localper[3]',per4); 
-
+pCount=612;
         pCount++;
         localStorage.setItem('pCount',pCount);
 
