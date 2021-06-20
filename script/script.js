@@ -15,6 +15,10 @@ var per2 = JSON.parse( localStorage.getItem('localper[1]'));//mydata[1];
 var per3 =JSON.parse( localStorage.getItem('localper[2]'));// mydata[2];
 var per4 =JSON.parse( localStorage.getItem('localper[3]'));//mydata[3];
 let pCount= JSON.parse(localStorage.getItem('pCount'));
+if(pCount==null)
+{
+    pCount=612;
+}
 
 // var voteCount = 0;
 function initialData(){
