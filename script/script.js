@@ -1,9 +1,11 @@
 // localStorage.setItem('data','[40,15,25,20]')
+let firstTime = localStorage.getItem('vote');
+if(firstTime==null){
 localStorage.setItem('localper[0]',40)
 localStorage.setItem('localper[1]',15)
 localStorage.setItem('localper[2]',25)
 localStorage.setItem('localper[3]',20)
-
+}
 
 // var data=localStorage.getItem('data');
 // var mydata=JSON.parse(data);
