@@ -90,6 +90,10 @@ if(vote==null)
     localStorage.setItem('vote',1);     
     
   }
+  if(vote>0)
+  {
+    alert("you have already votes.");
+  }
 }
 
 function changePercentages() {
