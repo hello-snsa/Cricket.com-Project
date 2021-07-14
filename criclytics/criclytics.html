@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
+    
+    <title>Cricletics</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
-    
-        <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
-    
-        <link rel="preload" href="style/style.css" as="style">
-        <link rel="stylesheet" href="style/style.css" >
-    
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Oswald:400&amp;display=swap" rel="stylesheet">
-
-        <script src="script/script.js"></script>
     <style>
       * {
         margin: 0px;
         padding: 0px;
         font-family: "Montserrat", sans-serif;
+        text-decoration: none;
         }
-      #nav {
-        width: 100%;
+
+        #nav {
         display: flex;
         align-items: center;
         background-color: rgba(23, 33, 50, 255);
         height: 80px;
         position:fixed;
-        top: 0; 
-        
-      }
+        top: 0;
+        width: 100%;
+        z-index:1;
+  }
 
-      #cont {
+     #cont {
         display: flex;
         width: 650px;
         margin-left: 80px;
@@ -42,7 +41,7 @@
       #cont {
         text-align: center;
         width: 90%;
-        margin-left: 15vw;
+        margin-left: 8.5rem;
       }
       #outerdiv{
         margin-top:80px;
@@ -52,17 +51,22 @@
       }
 
       #logo {
-        margin-left: 160px;
+        margin-left: 17rem;
       }
       .navdiv {
-        padding: 20px 14px;
+        padding: 20px 16px;
       }
 
       .navdiv p {
         font-size: 15px;
         color: white;
         font-size: 10px;
-      }
+        
+        }
+        .navdiv img {
+        width:1.3rem;
+        
+        }
       .navdiv:hover {
         background-color: rgb(105, 117, 143);
       }
@@ -169,6 +173,7 @@ top: -1;
   display: flex;
   margin:10px;
   align-items:center;
+ 
 
 }
 .a h3{
@@ -247,124 +252,134 @@ top: -1;
             color: rgb(218, 216, 216);
         }
 </style>
+
+
   </head>
   <body>
  
     <!-- Header Part -->
+    <nav id="nav">
+      <a href='../index.html'>
+        <div id="logo">
+        <img src="https://www.cricket.com/static/cricket.com.svg" />
+      </div></a>
+    
+    
+      <div id="cont">
 
-<nav id="nav">
-  <a href='../index.html'>
-  <div id="logo">
-  <img src="https://www.cricket.com/static/cricket.com.svg" />
-</div></a>
 
-<div id="cont">
 
-   <div class="link">
-  <a href='../underConstruction.html'>
-  <div class="navdiv">
+         
+         <div class="link">
+          <a href='../underConstruction/underConstruction.html'>
+        
+        <div class="navdiv">
+           
+          <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+          <p>Fantasy Research</p>
+       
+        </div>
+    </a>
+    </div>  
+    
+    
+    
+
      
-    <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
-    <p>Fantasy Research</p>
- 
-  </div>
-</a>
-</div>  
+    <div class="link">
+      <a href='criclytics.html'>
+            <div class="navdiv">
+              <img
+                src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+              />
+              <p>Criclytics</p>
+            </div>
+        </a>
+    </div> 
+         
+       
+    <div class="link">
+      <a href='../underConstruction/underConstruction.html'>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+          />
+          <p>Schedule</p>
+        </div>
+    </a>
+</div> 
 
 <div class="link">
-  <a href='criclytics.html'>
-      <div class="navdiv">
-        <img
-          src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
-        />
-        <p>Criclytics</p>
+  <a href='../underConstruction/underConstruction.html'>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+          />
+          <p>Series</p>
+        </div>
+    </a>
+</div> 
+
+<div class="link">
+  <a href='../news/latest.html'>
+        <div class="navdiv">
+          <img src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg">
+        
+          <p>News</p>
+        </div>
+    </a>
+</div> 
+
+
+<div class="link">
+  <a href='../underConstruction/underConstruction.html'>
+        <div class="navdiv">
+          <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+          <p>Videos</p>
+        </div>
+    </a>
+</div>
+
+
+<div class="link">
+  <a href='../underConstruction/underConstruction.html'>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+          />
+          <p>Players</p>
+        </div>
+    </a>
+</div>
+
+
+<div class="link">
+  <a href='../underConstruction/underConstruction.html'>
+        <div class="navdiv">
+          <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+          <p>Teams</p>
+        </div>
+    </a>
+</div>
+
+
+<a href="../login/login.html">
+        <div class="navdiv" onclick="login()">
+          <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+          <p>Profile</p>
+        </div>
+        </a>
       </div>
-  </a>
-</div> 
-   
- 
-<div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
-    />
-    <p>Schedule</p>
-  </div>
-</a>
-</div> 
+      
+    
+        
+      </div>
+    </nav>
 
-<div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
-    />
-    <p>Series</p>
-  </div>
-</a>
-</div> 
-
-<div class="link">
-<a href='../news/latest.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
-    />
-    <p>News</p>
-  </div>
-</a>
-</div> 
-
-
-<div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
-    <p>Videos</p>
-  </div>
-</a>
-</div>
-
-
-<div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
-    />
-    <p>Players</p>
-  </div>
-</a>
-</div>
-
-
-<div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
-    <p>Teams</p>
-  </div>
-</a>
-</div>
-
-
-
-  <div class="navdiv" onclick="login()">
-    <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
-    <p>Profile</p>
-  </div>
-</div>
-
-
-  
-</div>
-</nav>
-
-<!-- End Header part -->
+    <!-- End Header part -->
   
 <div id="outerdiv">
-  <img id="slideimage" src="../images/criclytics.PNG" />
+  <img id="slideimage" src="/images/criclytics.PNG" />
 
    
 
@@ -520,7 +535,7 @@ top: -1;
     </div>
     </div>
          <button class='toss' ><a style="text-decoration: none;"
-          href="match24-T20-Blast.html"> GLA won by 6 wickets</a></button>
+          href="/criclytics/match24-T20-Blast.html"> GLA won by 6 wickets</a></button>
     
         </div>
 
@@ -578,14 +593,14 @@ top: -1;
 
 <script>
   function login() {
-    window.location.href = "../login/login.html";
+    window.location.href = "/login/login.html";
   }
 
   function slide() {
     const arr = [
-      "../images/criclytics.PNG",
-      "../images/match prediction.PNG",
-      "../images/com_stats.PNG",
+      "/images/criclytics.PNG",
+      "/images/match prediction.PNG",
+      "/images/com_stats.PNG",
     ];
     let image = document.getElementById("slideimage");
     let i = 1;

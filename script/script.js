@@ -129,43 +129,84 @@ let localper4=  localStorage.getItem('localper[3]');
   initialData();
 
 }
-// score card
 
-function login() {
-  window.location.href = "/login/login.html";
-}
+//score card
 
-let i=1;
-function next(){
- const data=['images/big1.PNG','images/big2.PNG','images/big3.PNG','images/big4.PNG','images/big5.PNG',]
-  const arr = ['images/image1.PNG','images/image2.PNG','images/image3.PNG','images/image4.PNG','images/image5.PNG'];
-  if(i>4){
-i=0;
-}
+
+let i = 1;
+function next() {
+  const data = ['images/big1.png', 'images/big2.png', 'images/big3.png', 'images/big4.png', 'images/big5.png',]
+  const arr = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png'];
+  if (i > 4) {
+    i = 0;
+  }
   let image = document.getElementById("matches")
   let poster = document.getElementById("table_image")
-image.setAttribute('src',arr[i]);
-poster.setAttribute("src",data[i]);
+  image.setAttribute('src', arr[i]);
+  poster.setAttribute("src", data[i]);
 
-i++;
-
+  i++;
 }
 next();
 
-let k =1;
-function previous(){
-
-  const sata=['images/big1.PNG','images/big2.PNG','images/big3.PNG','images/big4.PNG','images/big5.PNG',]
-  const array = ['images/image1.PNG','images/image2.PNG','images/image3.PNG','images/image4.PNG','images/image5.PNG'];
-if(k<1){
-k=4
+let a = 4
+function changergt() {
+  const sum = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png'];
+  if (a > 4) {
+    a = 0;
+  }
+  let slide = document.getElementById("right")
+  slide.setAttribute('src', sum[a])
+  a++;
 }
-let image = document.getElementById("matches")
-  let poster = document.getElementById("table_image")
-image.setAttribute('src',array[k]);
-poster.setAttribute("src",sata[k]);
 
-k--;
+
+let b = 3
+function changelft() {
+  const lft = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png'];
+  if (b > 4) {
+    b = 0;
+  }
+  let slide = document.getElementById("left")
+  slide.setAttribute('src', lft[b])
+  b++;
+}
+
+let c = 0
+function previousrgt() {
+  const prev = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png'];
+  if (c < 0) {
+    c = 4;
+  }
+  let slide = document.getElementById("right")
+  slide.setAttribute('src', prev[c])
+  c--;
+}
+let d = 2
+function previouslft() {
+  const prev = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png'];
+  if (d < 0) {
+    d = 4;
+  }
+  let slide = document.getElementById("left")
+  slide.setAttribute('src', prev[d])
+  d--;
+}
+
+let k = 1;
+function previous() {
+
+  const sata = ['images/big1.png', 'images/big2.png', 'images/big3.png', 'images/big4.png', 'images/big5.png',]
+  const array = ['images/image1.png', 'images/image2.png', 'images/image3.png', 'images/image4.png', 'images/image5.png'];
+  if (k < 0) {
+    k = 4
+  }
+  let image = document.getElementById("matches")
+  let poster = document.getElementById("table_image")
+  image.setAttribute('src', array[k]);
+  poster.setAttribute("src", sata[k]);
+
+  k--;
 
 }
 previous();

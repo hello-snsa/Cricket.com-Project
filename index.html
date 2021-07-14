@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://images.cricket.com/icons/mainlogoico.ico">
+    
     <title>Live Cricket Score, Match Schedule & Predictions, Latest News | Cricket.com</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="preload" href="style/style.css" as="style">
     <link rel="stylesheet" href="style/style.css" >
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"/>
-  
+      rel="stylesheet"
+    />
     
  
 
@@ -43,23 +44,27 @@
       #cont {
         text-align: center;
         width: 90%;
-        margin-left: 15vw;
+        margin-left: 8.5rem;
       }
       #cont > div:nth-child(1) {
         width: 120px;
       }
 
       #logo {
-        margin-left: 170px;
+        margin-left: 17rem;
       }
       .navdiv {
-        padding: 20px 14px;
+        padding: 20px 16px;
       }
 
       .navdiv p {
         font-size: 15px;
         color: white;
         font-size: 10px;
+        
+        }
+        .navdiv img {
+        width:1.3rem;
         
         }
         .navdiv:hover{
@@ -87,7 +92,7 @@
       }
       #matches{
         width:420px;
-        margin:25px 5px 25px 5px;
+        margin:15px 5px 30px 5px;
        
         border-radius: 5px;
         position: relative;
@@ -95,9 +100,9 @@
        
        }
        #btn_prev,#btn_next{
-         width: 40px;
-         height: 40px;
-         margin: 100px 15px;
+         width: 20px;
+         height: 20px;
+         margin: 110px -80px;
          
        }
        #table{
@@ -108,27 +113,25 @@
        }
        #table_image{
          width:75%;
-         margin-top: -10px;
+         margin-top: 1px;
          
          
           }
           #left{
-            width: 420px;
+            width: 320px;
             margin:52px 5px 25px 5px;
             border-radius: 5px;
             height:140px;
             position: relative;
             right: -100px;
-            z-index:-1;
           }
           #right{
-            width: 420px;
+            width: 320px;
             margin:52px 5px 25px 5px;
             border-radius: 5px;
             height:140px;
             position: relative;
             left: -100px;
-            z-index:-1;
           }
 
          
@@ -138,6 +141,7 @@
       
       
     </style>
+
   </head>
   <body onload="changePercentages()" >
 
@@ -155,7 +159,7 @@
 
          
          <div class="link">
-          <a href='underConstruction.html'>
+          <a href='/underConstruction/underConstruction.html'>
         
         <div class="navdiv">
            
@@ -183,7 +187,7 @@
          
        
     <div class="link">
-      <a href='underConstruction.html'>
+      <a href='/underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img
             src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
@@ -194,7 +198,7 @@
 </div> 
 
 <div class="link">
-  <a href='underConstruction.html'>
+  <a href='/underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img
             src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
@@ -216,7 +220,7 @@
 
 
 <div class="link">
-  <a href='underConstruction.html'>
+  <a href='/underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
           <p>Videos</p>
@@ -226,7 +230,7 @@
 
 
 <div class="link">
-  <a href='underConstruction.html'>
+  <a href='/underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img
             src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
@@ -238,7 +242,7 @@
 
 
 <div class="link">
-  <a href='underConstruction.html'>
+  <a href='/underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
           <p>Teams</p>
@@ -264,6 +268,7 @@
 
     <!-- Sliding Score cards part -->
 <div id="maroon">
+  <!-- <div id="innerMaroon"> -->
  <img id="btn_prev" src='images/left-arrow.png' onclick="previous();previousrgt(); previouslft()">
  <img id="left" src='images/image3.PNG'>
    <img id="matches" src='images/image2.png'>
@@ -271,7 +276,8 @@
   <img id="btn_next" src='images/right-arrow.png' onclick="next(); changergt(); changelft()">
 </div>
 <div id="table">
-  <img id="table_image" src="images/big4.PNG">
+  <img id="table_image" src="images/big1.PNG">
+<!-- </div> -->
 </div>
    
 <!-- End Sliding Score cards part -->
@@ -284,7 +290,7 @@
       <div class="midBodyHeaderDiv">
           <div class="headLineDiv">
               <h2>FEATURED VIDEOS</h2>
-              <a href="news/latest">
+              <a href='/underConstruction/underConstruction.html'>
                   <img alt="images/svgs/RightSchevronBlack.svg" src="images/svgs/RightSchevronBlack.svg">
               </a>
           </div>
@@ -386,7 +392,7 @@
           <div class="midBodyHeaderDiv">
               <div class="headLineDiv">
                   <h2>NEWS AND ARTICLES</h2>
-                  <a href="news/latest.html">
+                  <a href="/news/latest.html">
                       <img alt="images/svgs/RightSchevronBlack.svg" src="images/svgs/RightSchevronBlack.svg">
                   </a>
               </div>
@@ -441,7 +447,7 @@
   
   <div class="articalContainer">
       <div> <a
-              href="news/rahaneNews.html">
+        href="news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
               <div class="articalImageDiv">
                   <img src="images/jpg/RahaneNews.jfif"/>
               </div>
@@ -461,7 +467,7 @@
   <hr/>
   <div class="articalContainer">
       <div> <a
-              href="news/ashwinNews.html">
+        href="news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
               <div class="articalImageDiv">
                   <img src="images/jpg/ashwinNews.jfif"/>
               </div>
@@ -480,7 +486,7 @@
   <hr/>
   <div class="articalContainer">
       <div> <a
-              href="news/chennaiOnthisDay.html">
+        href="news/tom-latham-to-lead-new-zealand-as-williamson-ruled-out-of-2nd-test-1623240805580.html">
               <div class="articalImageDiv">
                   <img src="images/jpg/chennaiOnthisDay.jpeg"/>
               </div>
@@ -513,7 +519,7 @@
   <div class="pollContainerDiv">
       <div class="pollHeadingPart">
           <h2>FAN POLL</h2>
-          <div class="pollVote" id="pollCount">612 votes</div>
+          <div class="pollVote" id="pollCount"></div>
       </div>
       <hr/>
       <div class="pollBottomPart" >
@@ -604,23 +610,23 @@
       <div class="singleImageContainer">
       
           <div class="singleImageDiv">
-               <img src="images/jpg/dataDigest1.jpg"/>
+               <img src="/images/jpg/dataDigest1.jpg"/>
           </div>
 
           <div class="singleImageDiv">
-              <img src="images/jpg/dataDigest2.jpg"/>     
+              <img src="/images/jpg/dataDigest2.jpg"/>     
          </div>
 
          <div class="singleImageDiv">
-          <img src="images/jpg/dataDigest3.jpg"/>
+          <img src="/images/jpg/dataDigest3.jpg"/>
                 
      </div>
      <div class="singleImageDiv">
-      <img src="images/jpg/dataDigest4.jpg"/>
+      <img src="/images/jpg/dataDigest4.jpg"/>
             
  </div>
  <div class="singleImageDiv">
-  <img src="images/jpg/dataDigest5.jpg"/>
+  <img src="/images/jpg/dataDigest5.jpg"/>
         
 </div>
          </div>
@@ -663,4 +669,6 @@
 
 </body>
 </html>
-<script src="script/script.js"></script>
+<script src="/script/script.js"></script>
+
+

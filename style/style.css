@@ -765,32 +765,57 @@ font-family: Montserrat;
     }
    
 /* new update */
-
-
-#left{
-    width: 420px;
-    margin:52px 5px 25px 5px;
-    border-radius: 5px;
-    height:140px;
-    position: relative;
-    right: -100px;
-     z-index:0;
-     display:none;
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
   }
-  #right{
-    width: 420px;
-    margin:52px 5px 25px 5px;
-    border-radius: 5px;
-    height:140px;
-    position: relative;
-    left: -100px;
-     z-index:1;
-     display:none;
+  #nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(23, 33, 50, 255);
+    height: 80px;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+   
+}
+
+  #cont {
+    display: flex;
+    width: 650px;
+    margin-left: 80px;
+    height: 100%;
+  }
+  #cont {
+    text-align: center;
+    width: 90%;
+    margin-left: 8.5rem;
+  }
+  #cont > div:nth-child(1) {
+    width: 120px;
   }
 
+  #logo {
+    margin-left: 17rem;
+  }
+  .navdiv {
+    padding: 20px 16px;
+  }
 
-
-
-
+  .navdiv p {
+    font-size: 15px;
+    color: white;
+    font-size: 10px;
+    
+    }
+    .navdiv img {
+    width:1.3rem;
+    
+    }
+    .navdiv:hover{
+        background-color:rgb(105, 117, 143);
+    }
 
 

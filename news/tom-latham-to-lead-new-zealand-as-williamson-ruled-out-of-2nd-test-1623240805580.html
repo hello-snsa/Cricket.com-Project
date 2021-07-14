@@ -27,119 +27,140 @@
         border:transparent;
         border-radius:5%;
     }
+    .newsImageDiv{
+      margin-top: 5rem;
+
+    }
 </style>
+
+<script>
+
+
+
+
+
+
+</script>
 </head>
 
-<body>
-<!-- Header Part -->
-
-<nav id="nav">
+<body onload="initial()" >
+ <!-- Header Part -->
+ <nav id="nav">
   <a href='../index.html'>
-  <div id="logo">
-  <img src="https://www.cricket.com/static/cricket.com.svg" />
-</div></a>
+    <div id="logo">
+    <img src="https://www.cricket.com/static/cricket.com.svg" />
+  </div></a>
 
-<div id="cont">
 
-   <div class="link">
-  <a href='../underConstruction.html'>
-  <div class="navdiv">
+  <div id="cont">
+
+
+
      
-    <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
-    <p>Fantasy Research</p>
- 
-  </div>
+     <div class="link">
+       <a href='../underConstruction/underConstruction.html'>
+    
+    <div class="navdiv">
+       
+      <img src="https://www.cricket.com/static/svgs/icons/frc.svg" />
+      <p>Fantasy Research</p>
+   
+    </div>
 </a>
 </div>  
 
-<div class="link">
-  <a href='criclytics.html'>
-      <div class="navdiv">
-        <img
-          src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
-        />
-        <p>Criclytics</p>
-      </div>
-  </a>
-</div> 
-   
+
+
+
  
 <div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
-    />
-    <p>Schedule</p>
-  </div>
+  <a href='../criclytics/criclytics.html'>
+        <div class="navdiv">
+          <img
+            src="https://www.cricket.com/static/svgs/icons/criclytics-icon.svg"
+          />
+          <p>Criclytics</p>
+        </div>
+    </a>
+</div> 
+     
+   
+<div class="link">
+   <a href='../underConstruction/underConstruction.html'>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
+      />
+      <p>Schedule</p>
+    </div>
 </a>
 </div> 
 
 <div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
-    />
-    <p>Series</p>
-  </div>
+ <a href='../underConstruction/underConstruction.html'>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
+      />
+      <p>Series</p>
+    </div>
 </a>
 </div> 
 
 <div class="link">
-<a href='../news/latest.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg"
-    />
-    <p>News</p>
-  </div>
+<a href='latest.html'>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/news-and-articles-icon.svg">
+    
+      <p>News</p>
+    </div>
 </a>
 </div> 
 
 
 <div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
-    <p>Videos</p>
-  </div>
+ <a href='../underConstruction/underConstruction.html'>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
+      <p>Videos</p>
+    </div>
 </a>
 </div>
 
 
 <div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img
-      src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
-    />
-    <p>Players</p>
-  </div>
+ <a href='../underConstruction/underConstruction.html'>
+    <div class="navdiv">
+      <img
+        src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
+      />
+      <p>Players</p>
+    </div>
 </a>
 </div>
 
 
 <div class="link">
- <a href='../underConstruction.html'>
-  <div class="navdiv">
-    <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
-    <p>Teams</p>
-  </div>
+ <a href='../underConstruction/underConstruction.html'>
+    <div class="navdiv">
+      <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
+      <p>Teams</p>
+    </div>
 </a>
 </div>
 
 
-
-  <div class="navdiv" onclick="login()">
-    <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
-    <p>Profile</p>
+<a href="../login/login.html">
+    <div class="navdiv" onclick="login()">
+      <img src="https://www.cricket.com/static/svgs/icons/profile.svg" />
+      <p>Profile</p>
+    </div>
+    </a>
   </div>
-</div>
-
-
   
-</div>
+
+    
+  </div>
 </nav>
 
 <!-- End Header part -->
@@ -223,7 +244,7 @@
                         <div class="newsHeartImageDiv">
                             <span id="heartImage">
                             <img  alt="heart" src="../images/svgs/heart.svg"  onclick="heartColorChanger()"/></span>
-                            <span id="heartCount">7</span>
+                            <span id="heartCount"> </span>
                        </div>
                     </div>
 
@@ -233,9 +254,9 @@
 
 <br/>
                     <div><p style="font-size:small; "><b>Tags</b></p></div> <br/>
-                    <div><a href="latest.html"><button class="btn" >         India
-                            vs New Zealand</button></a>
-                            <a href="latest.html"><button class="btn" style="width:15rem;">ICC World Test Championship</button></a>
+                    <div><button class="btn" >India
+                            vs New Zealand</button>
+                            <button class="btn" style="width:15rem;">ICC World Test Championship</button>
                            
                     </div>
                 </div> <br/>
@@ -285,11 +306,46 @@
 
 </html>
 <script>
+  function initial(){
+    let heartVote= localStorage.getItem('heart');
+    if(heartVote==1){
+
+      let newHeart= document.getElementById('heartImage');
+        let newCount= document.getElementById('heartCount');
+
+        newHeart.innerHTML= ` <img id="redheartImage" alt="redheart" src="../images/svgs/redheart.svg"  onclick="heartColorChanger()"/>`
+        newCount.innerHTML=8;
+
+    }
+
+else{
+  let newHeart= document.getElementById('heartImage');
+        let newCount= document.getElementById('heartCount');
+
+        newHeart.innerHTML= ` <img id="redheartImage" alt="heart" src="../images/svgs/heart.svg"  onclick="heartColorChanger()"/>`
+        newCount.innerHTML=7;
+}
+
+
+  }
     function heartColorChanger(){
+      let heartVote= localStorage.getItem('heart');
+      if(heartVote==null)
+      {
+        
+        localStorage.setItem('heart',1);
+
         let newHeart= document.getElementById('heartImage');
         let newCount= document.getElementById('heartCount');
 
         newHeart.innerHTML= ` <img id="redheartImage" alt="redheart" src="../images/svgs/redheart.svg"  onclick="heartColorChanger()"/>`
         newCount.innerHTML=8;
+
+        heartVote=1;
+
     }
+    else{
+      
+    }
+  }
 </script>
