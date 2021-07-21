@@ -212,13 +212,8 @@ top: -1;
   padding: 15px;
 }
 #grid{
-  /* display:grid;
-  grid-template-columns: 50% 50%; */
   display:flex;
-  justify-content: space-between;
   justify-content: center;
-
-
   background-color:white;
 
 }
@@ -276,7 +271,7 @@ top: -1;
 
          
          <div class="link">
-          <a href='../underConstruction.html'>
+          <a href='../underConstruction/underConstruction.html'>
         
         <div class="navdiv">
            
@@ -304,7 +299,7 @@ top: -1;
          
        
     <div class="link">
-      <a href='../underConstruction.html'>
+      <a href='../underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img
             src="https://www.cricket.com/static/svgs/icons/schedule-icon.svg"
@@ -315,7 +310,7 @@ top: -1;
 </div> 
 
 <div class="link">
-  <a href='../underConstruction.html'>
+  <a href='../underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img
             src="https://www.cricket.com/static/svgs/icons/series-icon.svg"
@@ -337,7 +332,7 @@ top: -1;
 
 
 <div class="link">
-  <a href='../underConstruction.html'>
+  <a href='../underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img src="https://www.cricket.com/static/svgs/icons/video-icon.svg" />
           <p>Videos</p>
@@ -347,7 +342,7 @@ top: -1;
 
 
 <div class="link">
-  <a href='../underConstruction.html'>
+  <a href='../underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img
             src="https://www.cricket.com/static/svgs/icons/players-icon.svg"
@@ -359,7 +354,7 @@ top: -1;
 
 
 <div class="link">
-  <a href='../underConstruction.html'>
+  <a href='../underConstruction/underConstruction.html'>
         <div class="navdiv">
           <img src="https://www.cricket.com/static/svgs/icons/teams-icon.svg" />
           <p>Teams</p>
@@ -384,7 +379,7 @@ top: -1;
     <!-- End Header part -->
   
 <div id="outerdiv">
-  <img id="slideimage" src="/images/criclytics.PNG" />
+  <img id="slideimage" src="../images/criclytics.PNG" />
 
    
 
@@ -502,6 +497,7 @@ top: -1;
          <button class='toss'>DUR won by 20 runs</button>
 </div>
 </div>
+
 <div>
 <div id='seperate'>
   <p>Match 27-Pakistan Super Legue 2021</p>
@@ -524,7 +520,6 @@ top: -1;
      <button class='toss'> KAR won by 7 runs</button>
 
     </div>
-
     <div id='seperate'>
       <p>Match 24- T 20 Blast</p>
     <div id='match'>
@@ -544,7 +539,7 @@ top: -1;
     </div>
     </div>
          <button class='toss' ><a style="text-decoration: none;"
-          href="/criclytics/match24-T20-Blast.html"> GLA won by 6 wickets</a></button>
+          href="match24-T20-Blast.html"> GLA won by 6 wickets</a></button>
     
         </div>
         </div>
@@ -603,14 +598,14 @@ top: -1;
 
 <script>
   function login() {
-    window.location.href = "/login/login.html";
+    window.location.href = "login/login.html";
   }
 
   function slide() {
     const arr = [
-      "/images/criclytics.PNG",
-      "/images/match prediction.PNG",
-      "/images/com_stats.PNG",
+      "../images/criclytics.PNG",
+      "../images/match prediction.PNG",
+      "../images/com_stats.PNG",
     ];
     let image = document.getElementById("slideimage");
     let i = 1;
