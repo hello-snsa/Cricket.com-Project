@@ -99,7 +99,7 @@ pCount=612;
   }
   if(vote>0)
   {
-    alert("you have already votes.");
+    alert("you have already voted.");
   }
 }
 
