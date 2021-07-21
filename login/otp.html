@@ -246,20 +246,15 @@ margin-left: 15%;
 </body>
 </html>
 <script>
-    let otp = [123456,112233,445566]
-    localStorage.setItem('otps',JSON.stringify(otp))
-
- function confirm(){
-     let input = document.getElementById('input').value
-     let onetimepass = JSON.parse(localStorage.getItem('otps'))
-     let arr = []
-    for(var i = 0;i<onetimepass.length;i++){
-    if(input==onetimepass[i]){
-        arr.push(onetimepass[i])
-        break;
-    }
-}
-    if(arr == input){
+    let otp = JSON.parse(localStorage.getItem('otp'));
+    console.log("your otp is ",otp)
+    
+    
+    function confirm(){
+      let input = document.getElementById('input').value
+      console.log("your input is ",input)
+   
+    if(otp == input){
        window.location.href='form.html'
     }
     else{
